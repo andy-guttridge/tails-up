@@ -1,0 +1,102 @@
+body {
+    background-color: lightgray;
+}
+
+/* --------------- Styles for the header/navigation area at the top of the page ---------------- */
+
+header {
+    height: 6rem;
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+    z-index: 1;
+}
+#page-title {
+    float: left;
+}
+
+#nav-list {
+    margin-right: 20px;
+    float: right;
+}
+
+#nav-list li {
+    display: inline;
+    list-style-type: none;
+    margin: 1rem;
+}
+
+/* --------------- Styles for the main site content --------------- */
+
+section{
+    background-color: lightskyblue;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Styles for the about section */
+
+#about{
+    clear: left;
+}
+
+.tagline-container {
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 33%;
+    height: 20rem;
+    text-align: bottom;
+    overflow: hidden;
+}
+
+#selection-container {
+    background-image: url("../images/cropped-cat.png");
+}
+
+#quality-container {
+    background-image: url("../images/cropped-cat.png");
+}
+
+#fee-container {
+    background-image: url("../images/cropped-cat.png");
+}
+
+.tagline-text {
+    display: inline;
+    position: relative;
+    color: white;
+    background-color: rgba(210, 210, 210, 0.3);
+    top: 80%;
+    left: 30%;
+    padding: 5px;
+}
+
+/* Styles for the cats looking for a home section */
+
+#looking {
+    text-align: center;
+}
+
+.cat-needs-home-container {
+    background-color: palevioletred;
+    display: inline-block;
+    width: 29%;
+    padding: 2%;
+    vertical-align: top;
+}
+
+.cat-needs-home-container p {
+    text-align: left;
+}
+
+.cat-needs-home-img {
+    width: 100%;
+}
+
+/* Styles for the footer */
+
+footer {
+    background-color: violet;
+}
