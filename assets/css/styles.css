@@ -2,6 +2,10 @@ body {
     background-color: lightgray;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
 
 header {
@@ -31,7 +35,7 @@ header {
 section{
     background-color: lightskyblue;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 /*Styles for the about section */
@@ -69,15 +73,12 @@ section{
     color: white;
     background-color: rgba(210, 210, 210, 0.3);
     top: 80%;
-    left: 30%;
+    left: 60%;
     padding: 5px;
 }
 
 /* Styles for the cats looking for a home section */
 
-#looking {
-    text-align: center;
-}
 
 .cat-needs-home-container {
     background-color: palevioletred;
@@ -85,10 +86,6 @@ section{
     width: 29%;
     padding: 2%;
     vertical-align: top;
-}
-
-.cat-needs-home-container p {
-    text-align: left;
 }
 
 .cat-needs-home-img {
