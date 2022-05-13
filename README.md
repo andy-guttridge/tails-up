@@ -39,10 +39,11 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 
 ### Content 
 
+- Placeholder content used during development generated using [Cat Ipsum Generator](https://fungenerators.com/lorem-ipsum/cat/) (not used in final version)
 
 ### Media
 
-- The images used on the wire frame mock-up of the page are:
+- The images used on the wire frame mock-up of the page and as placeholders during development are:
   - [Photo by cottonbro from Pexels](https://www.pexels.com/photo/black-cat-on-green-chair-6853506/
 )
   -   [Photo by Marko Blazevic from Pexels](https://www.pexels.com/photo/cute-gray-kitten-standing-on-a-wooden-flooring-774731/)

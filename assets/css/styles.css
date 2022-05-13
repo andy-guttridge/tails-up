@@ -96,6 +96,10 @@ section{
     width: 100%;
 }
 
+.cat-needs-home-container th, td {
+    text-align: left;
+}
+
 /* Styles for the register section */
 
 #form-container {
