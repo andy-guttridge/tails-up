@@ -97,6 +97,61 @@
     <!-- The register section of the site-->
     <section id="register">
         <h2>Register</h2>
+        <div id="form-container">
+            <p>Complete the form if you would like us to contact you when we have a suitable cat, and to let us know if you are interested in one of our current cats.</p>
+            <!-- URL for action attribute of <form> element is from the Code Institute HTML essentials module course materials:
+            https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/ee2afa91c35e4268b7de2ea21fe311dd/ -->
+
+            <form method="post" action="https://formdump.codeinstitute.net" target="_blank">
+                <h4>Contact details: </h4>
+                <label for="f-name">First name </label>
+                <input id="f-name" type="text" name="f-name" required>
+                <label for="l-name">Last Name </label>
+                <input id="l-name" type="text" name="l-name" required>
+                <label for="email">Email </label>
+                <input id="email" type="email" name="email" required>
+                <hr>
+
+                <h4>Preferred gender: </h4>
+                <label for="male">Male </label>
+                <input id="male" type="radio" name="gender" value="male" required>
+                <label for="female">Female </label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="either">Either </label>
+                <input id="either" type="radio" name="gender" value="either">
+                <hr>
+
+                <h4>Preferred age range (select all that apply): </h4>
+                <label for="kitten">Kitten </label>
+                <input id="kitten" type="checkbox" name="age-range" value="kitten">
+                <label for="young">Young adult </label>
+                <input id="young" type="checkbox" name="age-range" value="young-adult">
+                <label for="older">Older cat </label>
+                <input id="older" type="checkbox" name="age-range" value="older-cat">
+                <hr>
+
+                <h4>Will your cat have access to outside space?</h4>
+                <label for="yes-outside">Yes </label>
+                <input id="yes-outside" type="radio" name="outside" value="y" required>
+                <label for="no-outside">No </label>
+                <input id="no-outside" type="radio" name="outside" value="n">
+                <hr>
+
+                <h4>Do you have other pets?</h4>
+                <label for="yes-pets">Yes </label>
+                <input id="yes-pets" type="radio" name="pets" value="y" required>
+                <label for="no-pets">No </label>
+                <input id="no-pets" type="radio" name="pets" value="n">
+                <hr>
+
+                <h4>If you are interested in adopting any of our cats currently looking for a home, enter their names here (optional)</h4>
+                <label for="current-cats"></label>
+                <input id="current-cats" type="text" name="current-cats"> <!-- Deliberately left as not required -->
+                <hr>
+
+                <input type="submit">
+            </form>
+        </div>
     </section>
 
     <section id="information">

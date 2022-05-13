@@ -27,6 +27,8 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 
 ## Testing 
 
+- The use of a sticky header combined with a 'long' page divided into sections meant that while the navigation links to each section functioned correctly, the heading for each section was obscured underneath the header.
+
 ### Validator Testing 
 
 ### Unfixed Bugs

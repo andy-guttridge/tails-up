@@ -1,9 +1,10 @@
 body {
     background-color: lightgray;
+    text-align: center;
 }
 
-h1, h2, h3 {
-    text-align: center;
+p {
+    text-align: left;
 }
 
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
@@ -11,7 +12,7 @@ h1, h2, h3 {
 header {
     /* Use of the position property with a value of sticky in conjunction with the top property to create a 'sticky' header was based on
     guidance and the code example at https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 
-    (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings*/
+    (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings */
     height: 6rem;
     position: -webkit-sticky; /* This is needed for Safari browser support */
     position: sticky;
@@ -39,7 +40,6 @@ header {
 section{
     background-color: lightskyblue;
     padding: 10px;
-    text-align: left;
 }
 
 /*Styles for the about section */
@@ -94,6 +94,17 @@ section{
 
 .cat-needs-home-img {
     width: 100%;
+}
+
+/* Styles for the register section */
+
+#form-container {
+    display: inline-block;
+    max-width: 50%;
+}
+
+#form-container h4 {
+    margin-bottom: 2px;
 }
 
 /* Styles for the footer */
