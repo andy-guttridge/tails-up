@@ -1,11 +1,64 @@
+
+/*Code for importing Google Fonts adapted from Code Institute Coders Coffeehouse walkthrough project
+https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/4d85cd1a2c57485abbd8ccec8c00732c/?child=first */
+
+/* ------------------- Font option 1 -------------------- */
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat:wght@400;700&display=swap'); */
+
+/* 
+Google Fonts CSS
+font-family: 'Baloo 2', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* ------------------- Font option 2 -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@400;700&display=swap');
+
+/* 
+Google Fonts CSS
+font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Slab', serif;
+*/
+
 body {
-    background-color: lightgray;
+    background-color: rgb(49, 49, 49);
     text-align: center;
+    /* Font option 1 */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* Font option 2 */
+    font-family: 'Josefin Slab', serif;
+    font-size: 110%;
 }
 
-p {
+p, li {
     text-align: left;
 }
+
+p, th, td, a, label {
+    color: rgb(247, 247, 247);
+}
+
+h1, h2, h3, h4 {
+    /* Font option 1 */
+    /* font-family: 'Baloo 2', cursive; */
+    /* Font option 2 */
+    font-family: 'Amatic SC', cursive;
+    color: rgb(184, 203, 213);
+    margin: 0.5rem;
+}
+
+h1 {
+    font-size: 500%;
+}
+
+h2 {
+    font-size: 300%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
 
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
 
@@ -13,20 +66,19 @@ header {
     /* Use of the position property with a value of sticky in conjunction with the top property to create a 'sticky' header was based on
     guidance and the code example at https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 
     (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings */
-    height: 6rem;
-    position: -webkit-sticky; /* This is needed for Safari browser support */
+    background-color: rgb(49, 49, 49);
+    height: 11rem;
+    position: -webkit-sticky; /* This is needed for Safari browser support as per above article */
     position: sticky;
     top: 0;
-    background-color: lightgrey;
     z-index: 1;
 }
 #page-title {
-    float: left;
+  margin: 0.5rem;
 }
 
 #nav-list {
-    margin-right: 20px;
-    float: right;
+    
 }
 
 #nav-list li {
@@ -38,7 +90,6 @@ header {
 /* --------------- Styles for the main site content --------------- */
 
 section{
-    background-color: lightskyblue;
     padding: 10px;
 }
 
@@ -48,48 +99,58 @@ section{
     clear: left;
 }
 
-.tagline-container {
-    background-color: wheat;
+#about-hero-container {
+    background-color: rgb(49, 49, 49);
+    background-image: url("../images/large-cat-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block;
-    width: 33%;
-    height: 20rem;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    height: 40rem;
     text-align: bottom;
     overflow: hidden;
-}
-
-#selection-container {
-    background-image: url("../images/cropped-cat.png");
-}
-
-#quality-container {
-    background-image: url("../images/cropped-cat.png");
-}
-
-#fee-container {
-    background-image: url("../images/cropped-cat.png");
-}
-
-.tagline-text {
-    display: inline;
     position: relative;
-    color: white;
-    background-color: rgba(210, 210, 210, 0.3);
-    top: 80%;
-    left: 60%;
-    padding: 5px;
+}
+
+.about-content-container {
+    background-color: rgba(49, 49, 49, 0.8);
+    color: rgb(247, 247, 247);
+    padding: 2px 10px;
+    border-radius: 3%;
+    position: absolute;
+    margin: 10px;
+    display: inline-block;
+}
+
+.about-content-container h2 {
+     color: rgb(218, 185, 184);
+}
+
+#about-text-container {
+    width: 25%;
+    top: 2rem;
+    left: 1rem;
+}
+
+#tagline-container {
+    width: 25%;
+    bottom: 2rem;
+    right: 1rem;
+    font-size: 200%;
 }
 
 /* Styles for the cats looking for a home section */
 
 
 .cat-needs-home-container {
-    background-color: palevioletred;
     display: inline-block;
     width: 29%;
     padding: 2%;
     vertical-align: top;
+}
+
+.cat-needs-home-container h3 {
+    color: rgb(218, 185, 184);
 }
 
 .cat-needs-home-img {
@@ -109,6 +170,9 @@ section{
 
 #form-container h4 {
     margin-bottom: 2px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 110%;
+    color: rgb(247, 247, 247);
 }
 
 /* Styles for the footer */

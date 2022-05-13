@@ -43,10 +43,13 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 
 ### Media
 
-- The images used on the wire frame mock-up of the page and as placeholders during development are:
-  - [Photo by cottonbro from Pexels](https://www.pexels.com/photo/black-cat-on-green-chair-6853506/
+Images used in the completed website are:
+- The large grey cat 'hero' image used in the About section: [Photo by Pixabay from Pexels](https://www.pexels.com/photo/gray-cat-33537/)
+
+The images used on the wire frame mock-up of the page and as placeholders during development are:
+- [Photo by cottonbro from Pexels](https://www.pexels.com/photo/black-cat-on-green-chair-6853506/
 )
-  -   [Photo by Marko Blazevic from Pexels](https://www.pexels.com/photo/cute-gray-kitten-standing-on-a-wooden-flooring-774731/)
+-   [Photo by Marko Blazevic from Pexels](https://www.pexels.com/photo/cute-gray-kitten-standing-on-a-wooden-flooring-774731/)
 
 
 
