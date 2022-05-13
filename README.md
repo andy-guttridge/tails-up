@@ -8,7 +8,7 @@ The site features:
 
 - A 'sticky' navigation bar at the top of the site to enable easy access to each section of the site. The title of the site is also displayed prominently in the navigation bar.
 - An 'About' section, which provides some brief background information on the rescue centre and three taglines to explain why Tails-Up Cat Rescue would be a good choice for those looking to adopt a cat. Each tagline is illustrated with a cute cat picture to appeal to potential cat owners.
-- A 'Cats looking for a home' section, which features a number of cats currently up for adoption. The name of each cat is provided with a heading, followed by an appealing photo of the catand a description written in the first 'person'.
+- A 'Cats looking for a home' section, which features a number of cats currently up for adoption. The name of each cat is provided with a heading, followed by an appealing photo of the cat, a table providing basic details about the cat and a description written in the first 'person'.
 - A 'Register' section, which provides the user with a form to complete to register their interest in adopting a cat. The form has required text/email fields requesting basic personal information (first name, last name and email address) and some radio buttons enabling the user to express some basic preferences about the sort of cat they are looking for and the home environment. The form also contains an optional field allowing the user to enter the names of any cats currently up for adoption if they are specifically interested in these.
 - A 'Further information' section featuring an embedded Cat Society video providing some basic information for potential cat adopters.
 - A footer with links to social media.
