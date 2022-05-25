@@ -66,17 +66,21 @@ h3 {
 
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
 
+
 header {
     /* Use of the position property with a value of sticky in conjunction with the top property to create a 'sticky' header was based on
     guidance and the code example at https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 
     (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings */
     background-color: rgb(49, 49, 49);
     height: auto;
+    width:100%;
     position: -webkit-sticky; /* This is needed for Safari browser support as per above article */
     position: sticky;
     top: 0;
+    padding: 0.25rem;
     z-index: 1;
 }
+
 #page-title {
   margin: 0.5rem;
 }
@@ -167,6 +171,11 @@ section{
     max-width: 50%;
 }
 
+.text-input-label {
+    display: inline-block;
+    width: 8rem;
+    text-align: right;
+}
 
 fieldset {
     border-style: none none solid;
@@ -178,13 +187,9 @@ legend {
     font-weight: bold;
 }
 
-.contact-fields {
-    width: 30%;
+.text-fields {
+    width: 70%;
     margin: 0.25rem;
-}
-
-#current-cats {
-    width: 30%;
 }
 
 input {
@@ -245,8 +250,9 @@ footer {
        
         #about-hero-container {
             background-image: url("../images/small-cat-hero.jpg");
-            background-position-y: 200px;
-            background-position-x: -200px;
+            background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
+            background-position-y: 0;
+            background-position-x: -325px;
             height: auto;
         }
 
@@ -281,6 +287,22 @@ footer {
 
         #form-container {
             max-width: 100%;
+        }
+
+        .text-fields {
+            width: 100%;
+            margin: 0.25rem;
+        }
+
+        .text-input-label {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+
+        #information p {
+            text-align: left;
         }
 
         #cat-video {
