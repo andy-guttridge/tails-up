@@ -20,6 +20,10 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Josefin Slab', serif;
 */
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: rgb(49, 49, 49);
     text-align: center;
@@ -67,7 +71,7 @@ header {
     guidance and the code example at https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 
     (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings */
     background-color: rgb(49, 49, 49);
-    height: 11rem;
+    height: auto;
     position: -webkit-sticky; /* This is needed for Safari browser support as per above article */
     position: sticky;
     top: 0;
@@ -75,10 +79,6 @@ header {
 }
 #page-title {
   margin: 0.5rem;
-}
-
-#nav-list {
-    
 }
 
 #nav-list li {
@@ -116,7 +116,6 @@ section{
     background-color: rgba(49, 49, 49, 0.8);
     color: rgb(247, 247, 247);
     padding: 2px 10px;
-    border-radius: 3%;
     position: absolute;
     margin: 10px;
     display: inline-block;
@@ -209,8 +208,89 @@ input[type=submit] {
     text-align: center;
 }
 
+#cat-video {
+    width: 560px; 
+    height: 315px;
+}
+
 /* Styles for the footer */
 
 footer {
     background-color: violet;
+}
+
+/* --------------- Media queries ---------------- */
+/* Media query size guidance is from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+
+/* Styles for mobile */
+@media (max-width: 480px) {
+        #page-title {
+            font-size: 400%;
+        }
+    
+        header {
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        #nav-list {
+            padding: 0;
+        }
+        
+        #nav-list li {
+            display: block;
+            text-align: center;
+        }
+
+       
+        #about-hero-container {
+            background-image: url("../images/small-cat-hero.jpg");
+            background-position-y: 200px;
+            background-position-x: -200px;
+            height: auto;
+        }
+
+        .about-content-container {
+            margin-top: 3rem;
+            padding: 2px 10px;
+            position: static;
+            width: auto;
+            margin: 2rem;
+            display: block;
+        }
+        
+        .about-content-container h2 {
+             color: rgb(218, 185, 184);
+        }
+        
+        #about-text-container {
+            width: auto;
+        }
+        
+        #tagline-container {
+            width: auto;
+            font-size: 120%;
+        }
+
+        .cat-needs-home-container {
+            display: block;
+            width: 100%;
+            padding: 2%;
+            vertical-align: top;
+        }
+
+        #form-container {
+            max-width: 100%;
+        }
+
+        #cat-video {
+            max-width: 100%;
+        }
+
+  }
+
+/* Styles for desktop */
+
+@media (min-width: 1025px) {
+
 }
