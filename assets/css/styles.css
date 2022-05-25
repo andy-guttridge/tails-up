@@ -204,6 +204,11 @@ input[type=submit] {
     padding: 4px;
 }
 
+/* Styles for the Further Information section */
+#information p {
+    text-align: center;
+}
+
 /* Styles for the footer */
 
 footer {
