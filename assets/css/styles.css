@@ -103,7 +103,7 @@ section{
     background-color: rgb(49, 49, 49);
     background-image: url("../images/large-cat-hero.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     background-position-y: -200px;
     height: 40rem;
@@ -168,11 +168,40 @@ section{
     max-width: 50%;
 }
 
-#form-container h4 {
-    margin-bottom: 2px;
-    font-family: 'Josefin Slab', serif;
-    font-size: 110%;
+
+fieldset {
+    border-style: none none solid;
+    margin-top: 1rem;
+}
+
+legend {
     color: rgb(247, 247, 247);
+    font-weight: bold;
+}
+
+.contact-fields {
+    width: 30%;
+    margin: 0.25rem;
+}
+
+#current-cats {
+    width: 30%;
+}
+
+input {
+    font-family: 'Josefin Slab', serif;
+    color: rgb(49, 49, 49);
+    font-size: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 2px;
+}
+
+input[type=submit] {
+    /* width: 10rem; */
+    font-size:large;
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 4px;
 }
 
 /* Styles for the footer */
