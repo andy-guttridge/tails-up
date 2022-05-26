@@ -13,7 +13,6 @@ body {
     background-color: rgb(49, 49, 49);
     text-align: center;
     font-family: 'Josefin Slab', serif;
-    font-size: 110%;
     max-width: 1900px;
     margin: 0 auto;
 }
@@ -76,10 +75,6 @@ header {
     top: 0;
     padding: 0.25rem;
     z-index: 1;
-}
-
-#page-title {
-  margin: 0.5rem;
 }
 
 #nav-list li {
@@ -185,6 +180,7 @@ legend {
 
 .text-fields {
     width: 70%;
+    max-width: 30rem;
     margin: 0.25rem;
 }
 
@@ -227,7 +223,7 @@ footer {
 /* --------------- Styles for mobile and small tablets ---------------- */
 @media (max-width: 767px) {
     /* Mobile styles for page title and header */
-    #page-title {
+    #page-title  h1{
         font-size: 350%;
     }
 
@@ -243,6 +239,7 @@ footer {
     #nav-list li {
         display: block;
         text-align: center;
+        margin: 0.5rem;
     }
 
     /* Mobile styles for the About section */
@@ -302,6 +299,7 @@ footer {
     /* Mobile styles for the Further Information section */
     #further-info-text-container {
         display: block;
+        max-width: 100%;
     }
     /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
     #cat-video-container {
