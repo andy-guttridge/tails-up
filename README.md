@@ -33,6 +33,8 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 
 ### Validator Testing 
 
+- The W3C CSS Validator revealed the use of a `text-align` property with a value of `bottom` on the CSS for the `<div>` with an id of `#about-text-container`. As `bottom` is not an allowed value for this property, this line of CSS was having no effect and was removed.
+
 ### Unfixed Bugs
 
 ## Deployment
