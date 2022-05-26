@@ -4,6 +4,8 @@ https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/co
 
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@400;700&display=swap');
 
+/* --------------- Styles for common elements of the site ---------------- */
+
 html {
     font-size: 16px;
 }
@@ -41,6 +43,7 @@ h2 {
 h3 {
     font-size: 200%;
 }
+/* --------------- Styles for links and submit buttons ---------------- */
 
 a:hover {
     color: pink;
@@ -58,9 +61,7 @@ input[type="submit"]:hover {
     text-decoration: none;
 }
 
-
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
-
 
 header {
     /* Use of the position property with a value of sticky in conjunction with the top property to create a 'sticky' header was based on
@@ -86,6 +87,7 @@ header {
 
 section{
     padding: 10px;
+    scroll-margin: 12rem;
 }
 
 /*Styles for the about section */
@@ -134,7 +136,6 @@ section{
 
 /* Styles for the cats looking for a home section */
 
-
 .cat-needs-home-container {
     display: inline-block;
     width: 29%;
@@ -177,12 +178,6 @@ legend {
     font-weight: bold;
 }
 
-.text-fields {
-    width: 70%;
-    max-width: 30rem;
-    margin: 0.25rem;
-}
-
 input {
     font-family: 'Josefin Slab', serif;
     color: rgb(49, 49, 49);
@@ -198,7 +193,14 @@ input[type=submit] {
     padding: 4px;
 }
 
+.text-fields {
+    width: 70%;
+    max-width: 30rem;
+    margin: 0.25rem;
+}
+
 /* Styles for the Further Information section */
+
 #further-info-text-container {
     display: inline-block;
     max-width: 75%; 
@@ -220,6 +222,7 @@ footer {
 /* Media query sizes adpated from https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/ */
 
 /* --------------- Styles for mobile and small tablets ---------------- */
+
 @media (max-width: 767px) {
     /* Mobile styles for page title and header */
     #page-title  h1{
