@@ -227,8 +227,9 @@ footer {
 /* --------------- Media queries ---------------- */
 /* Media query size guidance is from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
 
-/* Styles for mobile */
+/* --------------- Styles for mobile ---------------- */
 @media (max-width: 480px) {
+    /* Mobile styles for page title and header */
         #page-title {
             font-size: 400%;
         }
@@ -247,7 +248,7 @@ footer {
             text-align: center;
         }
 
-       
+       /* Mobile style for the About section */
         #about-hero-container {
             background-image: url("../images/small-cat-hero.jpg");
             background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
@@ -278,13 +279,14 @@ footer {
             font-size: 120%;
         }
 
+        /* Mobile styles for the Cats Needing a Home section */
         .cat-needs-home-container {
             display: block;
             width: 100%;
             padding: 2%;
-            vertical-align: top;
         }
 
+        /* Mobile styles for the Register section */
         #form-container {
             max-width: 100%;
         }
@@ -301,14 +303,32 @@ footer {
             margin: 0;
         }
 
+        /* Mobile styles for the Further Information section */
         #information p {
             text-align: left;
         }
 
-        #cat-video {
-            max-width: 100%;
+        /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
+        #cat-video-container {
+            overflow: hidden;
+            position: relative;
+            width:100%;
         }
-
+        
+        #cat-video-container::after {
+            padding-top: 56.25%;
+            display: block;
+            content: '';
+        }
+        
+        #cat-video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
   }
 
 /* Styles for desktop */
