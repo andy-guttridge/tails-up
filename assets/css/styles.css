@@ -44,6 +44,22 @@ h3 {
     font-size: 200%;
 }
 
+a:hover {
+    color: pink;
+}
+
+a h1:hover {
+    color: pink;
+}
+
+input[type="submit"]:hover {
+    background-color: pink;
+}
+
+#page-title {
+    text-decoration: none;
+}
+
 
 /* --------------- Styles for the header/navigation area at the top of the page ---------------- */
 
