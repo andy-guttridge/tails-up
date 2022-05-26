@@ -28,6 +28,7 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 ## Testing 
 
 - The use of a sticky header combined with a 'long' page divided into sections meant that while the navigation links to each section functioned correctly, the heading for each section was obscured underneath the header.
+- Testing of the media queries for the responsive design revealed potential issues with content spilling across the hero image for very narrow screen sizes (below about 315px width).
 
 ### Validator Testing 
 

@@ -32,6 +32,8 @@ body {
     /* Font option 2 */
     font-family: 'Josefin Slab', serif;
     font-size: 110%;
+    max-width: 1900px;
+    margin: 0 auto;
 }
 
 p, li {
@@ -109,7 +111,7 @@ section{
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
-    background-position-y: -200px;
+    background-position: 50% 30%;
     height: 40rem;
     text-align: bottom;
     overflow: hidden;
@@ -168,7 +170,7 @@ section{
 
 #form-container {
     display: inline-block;
-    max-width: 50%;
+    max-width: 75%;
 }
 
 .text-input-label {
@@ -209,8 +211,9 @@ input[type=submit] {
 }
 
 /* Styles for the Further Information section */
-#information p {
-    text-align: center;
+#further-info-text-container {
+    display: inline-block;
+    max-width: 75%; 
 }
 
 #cat-video {
@@ -225,10 +228,10 @@ footer {
 }
 
 /* --------------- Media queries ---------------- */
-/* Media query size guidance is from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+/* Media query sizes adpated from https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/ */
 
-/* --------------- Styles for mobile ---------------- */
-@media (max-width: 480px) {
+/* --------------- Styles for mobile and small tablets ---------------- */
+@media (max-width: 767px) {
     /* Mobile styles for page title and header */
         #page-title {
             font-size: 400%;
@@ -248,12 +251,11 @@ footer {
             text-align: center;
         }
 
-       /* Mobile style for the About section */
+       /* Mobile styles for the About section */
         #about-hero-container {
             background-image: url("../images/small-cat-hero.jpg");
             background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
-            background-position-y: 0;
-            background-position-x: -325px;
+            background-position: 50% 50%;
             height: auto;
         }
 
@@ -267,7 +269,7 @@ footer {
         }
         
         .about-content-container h2 {
-             color: rgb(218, 185, 184);
+             font-size: 200%;
         }
         
         #about-text-container {
@@ -304,10 +306,9 @@ footer {
         }
 
         /* Mobile styles for the Further Information section */
-        #information p {
-            text-align: left;
+        #further-info-text-container {
+            display: block;
         }
-
         /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
         #cat-video-container {
             overflow: hidden;
@@ -331,8 +332,42 @@ footer {
         /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
   }
 
-/* Styles for desktop */
+  /* --------------- Styles for medium size devices (larger tablets and smaller laptops/desktops) ---------------- */
+  @media (min-width: 768px) and (max-width: 1199px) {
+     /* Medium size styles for the About section */
+     #about-hero-container {
+        background-image: url("../images/large-cat-hero.jpg");
+        background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
+        background-position: 50% 50%;
+        height: 40rem;
+    }
 
-@media (min-width: 1025px) {
+    .about-content-container h2 {
+        font-size: 200%;
+   }
 
-}
+    /* Medium size styles for the Cats Needing a Home section */
+    .cat-needs-home-container {
+        width: 75%;
+        padding: 2%;
+    }
+
+    /* Medium size styles for the Register section */
+    #form-container {
+        width: 75%;
+        padding: 2%;
+    }
+
+    .text-fields {
+        width: 100%;
+        margin: 0.25rem;
+    }
+
+    .text-input-label {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+  }
+
