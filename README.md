@@ -29,6 +29,7 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 
 - The use of a sticky header combined with a 'long' page divided into sections meant that while the navigation links to each section functioned correctly, the heading for each section was obscured underneath the header.
 - Testing of the media queries for the responsive design revealed potential issues with content spilling across the hero image for very narrow screen sizes (below about 315px width).
+- It was discovered that a value of `fixed` for the CSS `background-attachment:` property is not supported on iOS while testing a deployed version of the site on a real device (the Chrome developer tools do not emulate this behaviour). A value of `scroll` was used in the media queries for small and medium sized devices, to ensure compatibility. This means that only users with a large screen will benefit from the fixed position 'hero' image.
 
 ### Validator Testing 
 

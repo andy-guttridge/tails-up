@@ -2,23 +2,8 @@
 /*Code for importing Google Fonts adapted from Code Institute Coders Coffeehouse walkthrough project
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/4d85cd1a2c57485abbd8ccec8c00732c/?child=first */
 
-/* ------------------- Font option 1 -------------------- */
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat:wght@400;700&display=swap'); */
-
-/* 
-Google Fonts CSS
-font-family: 'Baloo 2', cursive;
-font-family: 'Montserrat', sans-serif;
-*/
-
 /* ------------------- Font option 2 -------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@400;700&display=swap');
-
-/* 
-Google Fonts CSS
-font-family: 'Amatic SC', cursive;
-font-family: 'Josefin Slab', serif;
-*/
 
 html {
     font-size: 16px;
@@ -27,9 +12,6 @@ html {
 body {
     background-color: rgb(49, 49, 49);
     text-align: center;
-    /* Font option 1 */
-    /* font-family: 'Montserrat', sans-serif; */
-    /* Font option 2 */
     font-family: 'Josefin Slab', serif;
     font-size: 110%;
     max-width: 1900px;
@@ -45,9 +27,6 @@ p, th, td, a, label {
 }
 
 h1, h2, h3, h4 {
-    /* Font option 1 */
-    /* font-family: 'Baloo 2', cursive; */
-    /* Font option 2 */
     font-family: 'Amatic SC', cursive;
     color: rgb(184, 203, 213);
     margin: 0.5rem;
@@ -113,7 +92,6 @@ section{
     background-attachment: fixed;
     background-position: 50% 30%;
     height: 40rem;
-    text-align: bottom;
     overflow: hidden;
     position: relative;
 }
@@ -203,7 +181,6 @@ input {
 }
 
 input[type=submit] {
-    /* width: 10rem; */
     font-size:large;
     font-weight: bold;
     border-radius: 10%;
@@ -233,103 +210,103 @@ footer {
 /* --------------- Styles for mobile and small tablets ---------------- */
 @media (max-width: 767px) {
     /* Mobile styles for page title and header */
-        #page-title {
-            font-size: 400%;
-        }
+    #page-title {
+        font-size: 350%;
+    }
+
+    header {
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    #nav-list {
+        padding: 0;
+    }
     
-        header {
-            height: auto;
-            margin-bottom: 0.5rem;
-        }
+    #nav-list li {
+        display: block;
+        text-align: center;
+    }
 
-        #nav-list {
-            padding: 0;
-        }
-        
-        #nav-list li {
-            display: block;
-            text-align: center;
-        }
+    /* Mobile styles for the About section */
+    #about-hero-container {
+        background-image: url("../images/small-cat-hero.jpg");
+        background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
+        background-position: 50% 50%;
+        height: auto;
+    }
 
-       /* Mobile styles for the About section */
-        #about-hero-container {
-            background-image: url("../images/small-cat-hero.jpg");
-            background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
-            background-position: 50% 50%;
-            height: auto;
-        }
+    .about-content-container {
+        margin-top: 3rem;
+        padding: 2px 10px;
+        position: static;
+        width: auto;
+        margin: 2rem;
+        display: block;
+    }
+    
+    .about-content-container h2 {
+            font-size: 200%;
+    }
+    
+    #about-text-container {
+        width: auto;
+    }
+    
+    #tagline-container {
+        width: auto;
+        font-size: 120%;
+    }
 
-        .about-content-container {
-            margin-top: 3rem;
-            padding: 2px 10px;
-            position: static;
-            width: auto;
-            margin: 2rem;
-            display: block;
-        }
-        
-        .about-content-container h2 {
-             font-size: 200%;
-        }
-        
-        #about-text-container {
-            width: auto;
-        }
-        
-        #tagline-container {
-            width: auto;
-            font-size: 120%;
-        }
+    /* Mobile styles for the Cats Needing a Home section */
+    .cat-needs-home-container {
+        display: block;
+        width: 100%;
+        padding: 2%;
+    }
 
-        /* Mobile styles for the Cats Needing a Home section */
-        .cat-needs-home-container {
-            display: block;
-            width: 100%;
-            padding: 2%;
-        }
+    /* Mobile styles for the Register section */
+    #form-container {
+        max-width: 100%;
+    }
 
-        /* Mobile styles for the Register section */
-        #form-container {
-            max-width: 100%;
-        }
+    .text-fields {
+        width: 100%;
+        margin: 0.25rem;
+    }
 
-        .text-fields {
-            width: 100%;
-            margin: 0.25rem;
-        }
+    .text-input-label {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
 
-        .text-input-label {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            margin: 0;
-        }
-
-        /* Mobile styles for the Further Information section */
-        #further-info-text-container {
-            display: block;
-        }
-        /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
-        #cat-video-container {
-            overflow: hidden;
-            position: relative;
-            width:100%;
-        }
-        
-        #cat-video-container::after {
-            padding-top: 56.25%;
-            display: block;
-            content: '';
-        }
-        
-        #cat-video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
+    /* Mobile styles for the Further Information section */
+    #further-info-text-container {
+        display: block;
+    }
+    /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
+    #cat-video-container {
+        overflow: hidden;
+        position: relative;
+        width:100%;
+    }
+    
+    #cat-video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
+    }
+    
+    #cat-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
   }
 
   /* --------------- Styles for medium size devices (larger tablets and smaller laptops/desktops) ---------------- */
