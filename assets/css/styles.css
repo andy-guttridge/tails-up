@@ -293,7 +293,7 @@ footer a:hover {
     }
 
     /* Mobile styles for the About section */
-    #about-hero-container {
+    .hero-container {
         background-image: url("../images/small-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
         background-position: center;
@@ -377,7 +377,7 @@ footer a:hover {
   /* --------------- Styles for medium size devices (larger tablets and smaller laptops/desktops) ---------------- */
   @media (min-width: 768px) and (max-width: 1199px) {
      /* Medium size styles for the About section */
-     #about-hero-container {
+     .hero-container {
         background-image: url("../images/large-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
         background-position: 50% 50%;
