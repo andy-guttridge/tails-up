@@ -214,7 +214,32 @@ input[type=submit] {
 /* Styles for the footer */
 
 footer {
-    background-color: violet;
+    background-color: rgb(218, 185, 184);
+}
+
+footer h2 {
+    color: rgb(49, 49, 49);
+    font-size: 150%;
+}
+
+footer ul {
+    margin: 0.12rem;
+}
+
+footer li {
+    text-align: center;
+    display: inline;
+    margin: 0.1rem 0.25rem;
+}
+
+footer a {
+    font-size: 200%;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+footer a:hover {
+    color: rgb(90, 127, 138);
 }
 
 /* --------------- Media queries ---------------- */
