@@ -2,7 +2,8 @@
 /*Code for importing Google Fonts adapted from Code Institute Coders Coffeehouse walkthrough project
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/4d85cd1a2c57485abbd8ccec8c00732c/?child=first */
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Slab:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lusitana:wght@400;700&display=swap');
 
 /* --------------- Styles for common elements of the site ---------------- */
 
@@ -13,13 +14,15 @@ html {
 body {
     background-color: rgb(49, 49, 49);
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    /* font-family: 'Josefin Slab', serif; */
+    font-family: 'Lusitana', serif;
     max-width: 1900px;
     margin: 0 auto;
 }
 
 p, li {
     text-align: left;
+    padding: 0 4px;
 }
 
 p, th, td, a, label {
@@ -42,6 +45,10 @@ h2 {
 
 h3 {
     font-size: 200%;
+}
+
+p, a, legend, label, table {
+    font-size: 110%;
 }
 /* --------------- Styles for links and submit buttons ---------------- */
 
@@ -80,7 +87,7 @@ header {
 #nav-list li {
     display: inline;
     list-style-type: none;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 /* --------------- Styles for the main site content --------------- */
@@ -251,7 +258,7 @@ footer a:hover {
 @media (max-width: 767px) {
     /* Mobile styles for page title and header */
     #page-title  h1{
-        font-size: 350%;
+        font-size: 300%;
     }
 
     header {
@@ -273,7 +280,7 @@ footer a:hover {
     #about-hero-container {
         background-image: url("../images/small-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
-        background-position: 50% 50%;
+        background-position: center;
         height: auto;
     }
 
