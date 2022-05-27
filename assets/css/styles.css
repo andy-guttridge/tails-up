@@ -103,7 +103,7 @@ section{
     clear: left;
 }
 
-#about-hero-container {
+.hero-container {
     background-color: rgb(49, 49, 49);
     background-image: url("../images/large-cat-hero.jpg");
     background-repeat: no-repeat;
@@ -247,6 +247,22 @@ footer a {
 
 footer a:hover {
     color: rgb(90, 127, 138);
+}
+
+/* Styles for the 404.html page */
+
+#error-page-content-container {
+    background-color: rgba(49, 49, 49, 0.8);
+    color: rgb(247, 247, 247);
+    padding: 2px 10px;
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+    top: 30%;
+}
+
+#error-page-content-container h2 {
+    color: rgb(218, 185, 184)
 }
 
 /* --------------- Media queries ---------------- */
