@@ -12,6 +12,7 @@ The site features:
 - A 'Register' section, which provides the user with a form to complete to register their interest in adopting a cat. The form has required text/email fields requesting basic personal information (first name, last name and email address) and some radio buttons enabling the user to express some basic preferences about the sort of cat they are looking for and the home environment. The form also contains an optional field allowing the user to enter the names of any cats currently up for adoption if they are specifically interested in these.
 - A 'Further information' section featuring an embedded Cat Society video providing some basic information for potential cat adopters.
 - A footer with links to social media.
+- A 404 error page to reassure the user with a page that clearly belongs to the Tails-Up website and provides links to return to the main site.
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -33,6 +34,7 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 - The page was tested with the VoiceOver screen reader in Mac OS X. This revealed that when navigating through 'landmarks' within the page, only the header, navigation elements, about section and footer were recognised as landmarks. The sections containing the main content of the site were not. Aria-labels were added to each section to rectify this.
 - The registration form allows the user to make multiple selections for the age range of cats they are interested in, using checkboxes. The form data is posted to the Code Institute form dump, as this provides useful feedback on the data posted. Testing revealed that multiple selections for the age range checkboxes were not being displayed on the Code Institute response page - only the first value submitted is shown. However, inspecting the data posted by the form in Chrome developer tools demonstrates that the data is being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
 ![Goole dev tool form data](read-me_media/form_data_screenshot.png)
+- Testing of the links back to the index.html in the header of the 404 error page found that the links were incorrectly formed. This took several attempts to correct, and resulting in a number of GIT commits and pushes to Github, to ensure they would function correctly on the deployed site. 
 
 ### Validator Testing 
 

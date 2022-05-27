@@ -14,7 +14,6 @@ html {
 body {
     background-color: rgb(49, 49, 49);
     text-align: center;
-    /* font-family: 'Josefin Slab', serif; */
     font-family: 'Lusitana', serif;
     max-width: 1900px;
     margin: 0 auto;
@@ -136,21 +135,22 @@ section{
 
 #tagline-container {
     width: 25%;
+    max-width: 270px;
     bottom: 2rem;
     right: 1rem;
-    font-size: 200%;
+    font-size: 125%;
 }
 
-/* Styles for the cats looking for a home section */
+/* Styles for the Available Cats section */
 
-.cat-needs-home-container {
+.available-cats-container {
     display: inline-block;
     width: 29%;
     padding: 2%;
     vertical-align: top;
 }
 
-.cat-needs-home-container h3 {
+.available-cats-container h3 {
     color: rgb(218, 185, 184);
 }
 
@@ -158,7 +158,7 @@ section{
     width: 100%;
 }
 
-.cat-needs-home-container th, td {
+.available-cats-container th, td {
     text-align: left;
 }
 
@@ -186,7 +186,7 @@ legend {
 }
 
 input {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Lusitana', serif;
     color: rgb(49, 49, 49);
     font-size: 100%;
     background-color: rgb(247, 247, 247);
@@ -319,11 +319,12 @@ footer a:hover {
     
     #tagline-container {
         width: auto;
+        max-width: 100%;
         font-size: 120%;
     }
 
-    /* Mobile styles for the Cats Needing a Home section */
-    .cat-needs-home-container {
+    /* Mobile styles for the Available Cats section */
+    .available-cats-container {
         display: block;
         width: 100%;
         padding: 2%;
@@ -373,7 +374,7 @@ footer a:hover {
     }
     /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
 
-    /* Styles for 404 error page content container */
+    /* Mobile styles for 404 error page content container */
     #error-page-content-container {
         width: 100%;
     }
@@ -393,8 +394,12 @@ footer a:hover {
         font-size: 200%;
    }
 
-    /* Medium size styles for the Cats Needing a Home section */
-    .cat-needs-home-container {
+   #tagline-container {
+       width: 35%;
+   }
+
+    /* Medium size styles for the Available Cats section */
+    .available-cats-container {
         width: 75%;
         padding: 2%;
     }
