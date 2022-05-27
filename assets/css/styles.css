@@ -372,6 +372,11 @@ footer a:hover {
         height: 100%;
     }
     /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
+
+    /* Styles for 404 error page content container */
+    #error-page-content-container {
+        width: 100%;
+    }
   }
 
   /* --------------- Styles for medium size devices (larger tablets and smaller laptops/desktops) ---------------- */
