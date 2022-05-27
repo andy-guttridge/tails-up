@@ -32,8 +32,15 @@ The features of the site were 'mocked up' using in a basic wireframe prior to im
 - Testing of the media queries for the responsive design revealed potential issues with content spilling across the hero image for very narrow screen sizes (below about 315px width).
 - It was discovered that a value of `fixed` for the CSS `background-attachment:` property is not supported on iOS by testing a deployed version of the site on a real device (the Chrome developer tools do not emulate this behaviour). A value of `scroll` was used in the media queries for small and medium sized devices, to ensure compatibility. This means that only users with a large screen will benefit from a fixed position 'hero' image.
 - The page was tested with the VoiceOver screen reader in Mac OS X. This revealed that when navigating through 'landmarks' within the page, only the header, navigation elements, about section and footer were recognised as landmarks. The sections containing the main content of the site were not. Aria-labels were added to each section to rectify this.
-- The registration form allows the user to make multiple selections for the age range of cats they are interested in, using checkboxes. The form data is posted to the Code Institute form dump, as this provides useful feedback on the data posted. Testing revealed that multiple selections for the age range checkboxes were not being displayed on the Code Institute response page - only the first value submitted is shown. However, inspecting the data posted by the form in Chrome developer tools demonstrates that the data is being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
+- The registration form was initially coded to submit the form to the Code Institute form dump, to test that it was functioning correctly. The form allows the user to make multiple selections for the age range of cats they are interested in, using checkboxes. Testing revealed that multiple selections for the age range checkboxes were not being displayed on the Code Institute response page - only the first value submitted is shown:
+
+![Form dump image](read-me_media/form-dump-screenshot.png)
+
+ However, inspecting the data posted by the form in Chrome developer tools demonstrates that the data is being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
 ![Goole dev tool form data](read-me_media/form_data_screenshot.png)
+
+Once the form was verified to be correctly functioning using the form dump, a separate page to indicate successful submission was created, and the form refactored to link to this page using the get method.
+
 - Testing of the links back to the index.html in the header of the 404 error page found that the links were incorrectly formed. This took several attempts to correct, and resulting in a number of GIT commits and pushes to Github, to ensure they would function correctly on the deployed site. 
 
 ### Validator Testing 

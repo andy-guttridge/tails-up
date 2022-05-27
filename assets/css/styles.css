@@ -249,20 +249,25 @@ footer a:hover {
     color: rgb(90, 127, 138);
 }
 
-/* Styles for the 404.html page */
+/* Styles for the 404.html and form_submitted.html pages */
 
-#error-page-content-container {
+.info-page-content-container {
     background-color: rgba(49, 49, 49, 0.8);
     color: rgb(247, 247, 247);
     padding: 2px 10px;
     position: relative;
     margin: 0 auto;
     width: 50%;
-    top: 30%;
+    top: 15%;
 }
 
-#error-page-content-container h2 {
+.info-page-content-container h2 {
     color: rgb(218, 185, 184)
+}
+
+.info-page-text-container {
+    text-align: center;
+    display: inline-block;
 }
 
 /* --------------- Media queries ---------------- */
@@ -374,8 +379,9 @@ footer a:hover {
     }
     /*This is the end of the block of CSS from https://flaviocopes.com/responsive-youtube-videos/ */
 
-    /* Mobile styles for 404 error page content container */
-    #error-page-content-container {
+    /* Mobile styles for 404.html and form_submitted.html pages */
+
+    .info-page-content-container {
         width: 100%;
     }
   }
