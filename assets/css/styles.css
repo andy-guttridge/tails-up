@@ -302,7 +302,7 @@ footer a:hover {
         background-image: url("../images/small-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
         background-position: center;
-        height: auto;
+        height: 100%;
     }
 
     .about-content-container {
