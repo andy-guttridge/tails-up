@@ -102,7 +102,7 @@ section{
     clear: left;
 }
 
-.hero-container {
+#hero-container {
     background-color: rgb(49, 49, 49);
     background-image: url("../images/large-cat-hero.jpg");
     background-repeat: no-repeat;
@@ -280,6 +280,7 @@ footer a:hover {
     /* Mobile styles for page title and header */
     #page-title  h1{
         font-size: 300%;
+        line-height: 90%;
     }
 
     header {
@@ -294,11 +295,11 @@ footer a:hover {
     #nav-list li {
         display: block;
         text-align: center;
-        margin: 0.5rem;
+        margin: 0.2rem;
     }
 
     /* Mobile styles for the About section */
-    .hero-container {
+    #hero-container {
         background-image: url("../images/small-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
         background-position: center;
@@ -389,7 +390,7 @@ footer a:hover {
   /* --------------- Styles for medium size devices (larger tablets and smaller laptops/desktops) ---------------- */
   @media (min-width: 768px) and (max-width: 1199px) {
      /* Medium size styles for the About section */
-     .hero-container {
+     #hero-container {
         background-image: url("../images/large-cat-hero.jpg");
         background-attachment: scroll; /* To ensure mobile compatibility - some mobile browsers do not support a value of fixed */
         background-position: 50% 50%;
