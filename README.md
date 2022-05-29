@@ -45,6 +45,15 @@ Once the form was verified to be correctly functioning using the form dump, a se
 
 ### Validator Testing 
 
+#### W3C HTML Validator
+- The W3C HTML validator report contained a warning of a possible mis-use of an `aria-label` on line 52 of `html.index`. The `aria-label` had been included for a `<div>` element containing 'taglines' for the site in an unordered list, to provide context for assistive technology in the absence of a heading. The `aria-label` was removed from the `<div>` and added to the nested `<ul>` element instead. This resolved the issue.
+- The validator detected a mis-spelling of the `<article>` opening tag on line 136 of `index.html`. Manual inspection revealed that the closing tag on line 166 was also mis-spelled, and the issue was corrected.
+- A mal-formed URL in the `action` attribute of the `<form>` element on line 180 of `index.html` was detected and corrected.
+- The validator report stated that the `frameborder` attribute on the `<iframe>` element on line 253 of `index.html` is obsolete, and should be replaced with CSS. The code for the `<iframe>` - including the `frameborder` attribute - was derived from the embedded player link provided by YouTube. The offending attribute was removed, and `border: 0px` added to the `styles.css` file to achieve the same effect.
+- The HTML validator did not produce any warnings or errors for `404.html` or `form-submitted.html`.
+
+#### W3C CSS Validator
+
 - The W3C CSS Validator revealed the use of a `text-align` property with a value of `bottom` on the CSS for the `<div>` with an id of `#about-text-container`. As `bottom` is not an allowed value for this property, this line of CSS was having no effect and was removed.
 
 ### Unfixed Bugs
