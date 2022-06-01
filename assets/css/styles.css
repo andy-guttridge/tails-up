@@ -358,6 +358,7 @@ footer a:hover {
         display: block;
         max-width: 100%;
     }
+    
     /*  The following CSS to responsively size the embedded video for mobile is from https://flaviocopes.com/responsive-youtube-videos/ */
     #cat-video-container {
         overflow: hidden;
