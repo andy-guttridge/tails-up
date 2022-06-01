@@ -171,7 +171,7 @@ All the text and background combinations included on the site were found to pass
 
     <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
 
-Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. Given that the YouTube video was rendered correctly and fully usable throughout testing, and the overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
+Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
 
 ### Unfixed Bugs
 
