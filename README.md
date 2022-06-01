@@ -109,7 +109,7 @@ Ideas for future development could include:
 
 The site was tested regularly throughout development using Google Chrome on Mac OS and Windows 10, and in Safari on Mac OS and on an iPhone XR. This included testing of links, the registration form and the embedded YouTube video. The Google Chrome development tools were used to preview the site on a range of mobile device sizes including Galaxy Fold, iPhone 5S, iPhone XR, Samsung Galaxy A51/71, Pixel 5, iPad, iPad Air and iPad Pro. 
 
-The 'responsive' setting in the development tools was used frequently to freely resize the site through a range of sizes. This helped to decide on the three 'breakpoints' as the best solution to accomodate all screen sizes, and included testing of the site on very wide screens - this revealed that the site started to look quite sparse at large sizes, and resulted in a decision to set a maximum width of 2000px and centre the whole site to ensure a pleasing experience even on very large monitors.
+The 'responsive' setting in the development tools was used frequently to freely resize the site through a range of sizes. This helped to decide on the three 'breakpoints' as the best solution to accomodate all screen sizes, and included testing of the site on very wide screens - this revealed that the site started to look quite sparse at large sizes, and resulted in a decision to set a maximum width of 1900px and centre the whole site to ensure a pleasing experience even on very large monitors.
 
 Specific issues found during testing included:
 
@@ -172,6 +172,8 @@ All the text and background combinations included on the site were found to pass
     <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
 
 Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
+
+- The deployed site was carefully tested against the development version to check that all features function correctly. This included testing of all links within `index.html`, `404.html` and `form_submitted.html`, playing the embedded YouTube video and submitting the registration form. Early deployment and regular testing of a live site throughout development was helpful in picking up some issues that were not apparent when testing only the development version in Google Chrome (specific instances noted above).
 
 ### Unfixed Bugs
 
