@@ -195,7 +195,11 @@ input {
     padding: 2px;
 }
 
-.checkbox-container {
+.radio-checkbox-container {
+    display: inline-block;
+}
+
+.radio-checkbox-inner-container {
     display: inline-block;
 }
 
@@ -359,8 +363,14 @@ footer a:hover {
         margin: 0;
     }
 
-    .checkbox-container {
+    .radio-checkbox-container {
         display: block;
+    }
+
+    .radio-checkbox-inner-container {
+        text-align: right;
+        width: 8rem;
+        padding-right: 3.5rem;
     }
 
     /* Mobile styles for the Further Information section */
