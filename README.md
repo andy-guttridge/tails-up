@@ -131,6 +131,15 @@ Specific issues found during testing included:
 
 - Final testing for small screen sizes showed that the user was able to horizontally scroll the page by a few pixels in each direction. By inspecting the elements of the page using the Chrome development tools, it was determined that this was caused by left and right margins on a number of elements including headings and list items, and padding on the `<header>`. CSS was updated to apply margins only to the top and bottom of these elements. This resolved the issue.
 
+- This final testing also demonstrated that one of the checkboxes in the 'Preferred age range' section of the form was pushed onto a new line for screen sizes of around 320px width and below (e.g. iPhone 5), breaking the visual link with the corresponding label:
+
+<img src="read-me_media/bad_checkboxes.png">
+
+- This was fixed by wrapping each set of checkboxes and labels within two nested `</div>`s. For mobile displays, the outer `<div>` is displayed as a block element, causing each checkbox and label pair to display on a new line. The inner `<div>` enabled the checkbox/label pairs to be appropriately aligned and centred within the outer `<div>`. While the issue only affected one checkbox, this approach was adopted for all radio buttons and checkboxes in the form for consistency:
+
+<img src="read-me_media/tidy_checkboxes.png">
+
+
 ### Validator Testing 
 
 #### W3C HTML Validator
