@@ -129,6 +129,8 @@ Specific issues found during testing included:
 
 - Testing of the links back to the `index.html` in the header of the 404 error page found that the links were incorrectly formed. This took several attempts to correct, and resulted in a number of GIT commits and pushes to Github, to ensure they would function correctly on the deployed site. 
 
+- Final testing for small screen sizes showed that the user was able to horizontally scroll the page by a few pixels in each direction. By inspecting the elements of the page using the Chrome development tools, it was determined that this was caused by left and right margins on a number of elements including headings and list items, and padding on the `<header>`. CSS was updated to apply margins only to the top and bottom of these elements. This resolved the issue.
+
 ### Validator Testing 
 
 #### W3C HTML Validator

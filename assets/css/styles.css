@@ -195,6 +195,10 @@ input {
     padding: 2px;
 }
 
+.checkbox-container {
+    display: inline-block;
+}
+
 input[type=submit] {
     font-size:large;
     font-weight: bold;
@@ -319,7 +323,7 @@ footer a:hover {
     }
     
     .about-content-container h2 {
-            font-size: 200%;
+        font-size: 200%;
     }
     
     #about-text-container {
@@ -353,6 +357,10 @@ footer a:hover {
         width: 100%;
         text-align: center;
         margin: 0;
+    }
+
+    .checkbox-container {
+        display: block;
     }
 
     /* Mobile styles for the Further Information section */
