@@ -16,7 +16,7 @@ The sections of the main website are arranged vertically in one 'long' webpage, 
 
 A 'sticky' navigation bar at the top of the site to enable easy access to each section of the site. The title of the site is also displayed prominently in the navigation bar, and is itself a clickable link to `index.html`. The navigation items are arranged horizontally for screens at least 768px wide, and vertically for screens below this width, to prevent alignment issues.
 
-<img src="read-me_media/nav_bar_horizontal.png" alt="Horizontal nav bar" height="150" style="vertical-align: top; margin: 5px"> <img src="read-me_media/nav_bar_vertical.png" alt="Vertical nav bar" height="150" style="margin: 5px">
+<img src="read-me_media/nav_bar_horizontal.png" alt="Horizontal nav bar" style="vertical-align: top; margin: 5px; max-height:150px"> <img src="read-me_media/nav_bar_vertical.png" alt="Vertical nav bar" style="margin: 5px; max-height: 150px">
 
 ### About section
 
@@ -26,7 +26,7 @@ The information within this section is presented in an 'About Tails-Up' box and 
 
 The hero image is displayed using the `background-image` CSS property applied to a `<div>`. Adding `role="img"` and `aria-label` attributes to the `<div>` to provide context for assistive technology was considered, however this could potentially have obscured the content within the `<div>` from screen readers. As the hero image itself provides no information and serves no semantic purpose, this was omitted to ensure the content within the `<div>` remained accessible. 
 
-<img src="read-me_media/about_wide.png" alt="About section for wider screens" height="300" style="vertical-align: top; margin: 5px"> <img src="read-me_media/about_narrow.png" alt="About section for narrow screens" height="300" style="margin: 5px">
+<img src="read-me_media/about_wide.png" alt="About section for wider screens" style="vertical-align: top; margin: 5px; max-height: 300px"> <img src="read-me_media/about_narrow.png" alt="About section for narrow screens" style="margin: 5px; max-height: 300px">
 
 
 
@@ -36,34 +36,34 @@ An 'Available Cats' section, which features a number of cats currently available
 
 The information about each cat is arranged horizontally on screen sizes of 1200px width or more, and stacked vertically on screens narrower than this to avoid some aesthetically displeasing alignment issues and ensure legibility.
 
-<img src="read-me_media/available_cats_wide.png" alt="Available cats section for wider screens" height="300" style="vertical-align: top; margin: 5px"> <img src="read-me_media/available_cats_narrow.png" alt="Available cats section for narrow screens" height="300" style="margin: 5px">
+<img src="read-me_media/available_cats_wide.png" alt="Available cats section for wider screens" style="vertical-align: top; margin: 5px; max-height: 3px"> <img src="read-me_media/available_cats_narrow.png" alt="Available cats section for narrow screens" style="margin: 5px; max-height: 300px">
 
 ### Register section
 
 A 'Register' section, which provides the user with a form to complete to register their interest in adopting a cat. The form has required text/email fields requesting personal information (first name, last name and email address) and some radio buttons enabling the user to express some basic preferences about the sort of cat they are looking for and information about their home environment. The form also contains an optional field allowing the user to enter the names of any cats currently up for adoption if they are specifically interested in these.
 
-<img src="read-me_media/register_form.png" alt="Register section" height="500" style="margin: 5px">
+<img src="read-me_media/register_form.png" alt="Register section" style="margin: 5px; max-height: 500px;">
 
 ### Page to indicate successful form submission
 
 A separate page opening in the same window to confirm successful submission of the registration form.
 
-<img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" height="500" style="margin: 5px">
+<img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" style="margin: 5px; max-height: 500px">
 
 ### Further Information section
 A 'Further information' section featuring an embedded video from the Cat Society, providing some basic information for those new to adopting a cat, and a link to the Cats Protection charity website.
 
-<img src="read-me_media/further_info.png" alt="Page indicating successful form submission" height="500" style="margin: 5px">
+<img src="read-me_media/further_info.png" alt="Page indicating successful form submission" style="margin: 5px; max-height: 500px">
 
 ### Footer
 A footer with links to social media.
 
-<img src="read-me_media/footer.png" alt="Footer" height="50" style="margin: 5px">
+<img src="read-me_media/footer.png" alt="Footer" style="margin: 5px; max-height: 500px">
 
 ### 404 Error page
 A 404 error page to notify the user if they attempt to access a non-existent page or file. This is styled so that it clearly belongs to Tails-Up, and provides the user with links back to the main site.
 
-<img src="read-me_media/404.png" alt="404 page" height="500" style="margin: 5px">
+<img src="read-me_media/404.png" alt="404 page" style="margin: 5px; max-height: 500px">
 
 ## Design
 
@@ -76,7 +76,7 @@ The site features a responsive design providing a suitable layout for smaller sc
 ### Planning
 The features of the site were 'mocked up' using a basic wireframe of the layout envisioned for larger screens prior to implementation:
 
-<img src="read-me_media/tails_up_wireframe_small.png" width="350" alt="Wireframe plan for the project">
+<img src="read-me_media/tails_up_wireframe_small.png" alt="Wireframe plan for the project" style="max-width: 350px">
 
 The final site adheres closely to this, however soon after implementation commenced, it was decided to replace the three cat images in the 'About' section with a single 'hero' image. This was a purely aesthetic decision made after browsing some of the cat themed images available for use.
 
@@ -162,7 +162,7 @@ Specific issues found during testing included:
 - The WebAIM [contrast checker](https://webaim.org/resources/contrastchecker/) was used to check the colour scheme of the site.
 All the text and background combinations included on the site were found to pass the WCAG AAA test (including with the lighter background areas on the semi-transparent boxes in the About section), with the exception of the light pink headings on the dark grey background (and vice-versa in the footer):
 
-<img src="read-me_media/webaim.png" alt="Webaim score for pink text and dark grey background" width="350">
+<img src="read-me_media/webaim.png" alt="Webaim score for pink text and dark grey background" style="max-width: 350px">
 
  - The light pink/dark grey combination was found to fail the WCAG AAA test for 'normal' text, however it passed for 'large text'. 'Large text' is defined by WebAIM as 24px or greater. All text using this colour combination on the page is 24px or greater (based on a standard web browser text size of 16px) and the combination still passes the AA test even for normal text, therefore this was deemed acceptable.
 
