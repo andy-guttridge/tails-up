@@ -6,6 +6,10 @@ https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/co
 
 /* --------------- Styles for common elements of the site ---------------- */
 
+* {
+    z-index: 0;
+}
+
 html {
     font-size: 16px;
 }
@@ -78,7 +82,7 @@ header {
     position: -webkit-sticky; /* This is needed for Safari browser support as per above article */
     position: sticky;
     top: 0;
-    padding: 0.25rem;
+    padding: 0.25rem 0 0.25rem 0;
     z-index: 1;
 }
 
@@ -145,7 +149,6 @@ section{
 .available-cats-container {
     display: inline-block;
     width: 29%;
-    padding: 2%;
     vertical-align: top;
 }
 
@@ -284,8 +287,8 @@ footer a:hover {
     }
 
     header {
-        height: auto;
         margin-bottom: 0.5rem;
+        padding: 0.1rem 0 0.1rem 0;
     }
 
     #nav-list {
@@ -333,7 +336,6 @@ footer a:hover {
     .available-cats-container {
         display: block;
         width: 100%;
-        padding: 2%;
     }
 
     /* Mobile styles for the Register section */
@@ -409,7 +411,6 @@ footer a:hover {
     /* Medium size styles for the Available Cats section */
     .available-cats-container {
         width: 75%;
-        padding: 2%;
     }
 
     /* Medium size styles for the Register section */
