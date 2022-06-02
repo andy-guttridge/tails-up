@@ -46,7 +46,7 @@ A 'Register' section, which provides the user with a form to complete to registe
 
 ### Page to indicate successful form submission
 
-A separate page opening in a new window to confirm successful submission of the registration form.
+A separate page opening in the same window to confirm successful submission of the registration form.
 
 <img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" height="500" style="margin: 5px">
 
