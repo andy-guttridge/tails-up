@@ -4,19 +4,60 @@
   <img src="read-me_media/read-me_header_image.png" alt="Header image for the Readme file" align="center">
 </p>
 
-Tails-Up Cat Rescue is a static website for a cat rescue/rehoming centre. The site is aimed at people who are interested in adopting a cat, and showcases a number of cats who need to be re-homed. It provides some key information about the personality, attributes and needs of each cat to enable potential adopters to work out whether they might be a suitable 'match'. It also features a form to put those interested in adopting in touch with the centre, and some further information for those new to cat ownership. The site includes some basic background information about the rescue centre, and links to social media in the footer.
+Tails-Up Cat Rescue is a static website for a cat rescue/rehoming centre. 
+
+The objectives of the site are:
+
+1. To provide a platform for the rescue centre to showcase specific cats up for adoption, and provide some basic details about each cat, including personality, attributes and any needs or requirements specific to each cat.
+2. To provide a mechanism for people interested in adopting a cat to register their details with the centre, and provide some basic details about their home environment and preferences with respect to cats they would be interested in. This would then enable the rescue centre to 'match' suitable cats to potential adopters.
+3. To present some basic background information about the rescue centre, including its location and purpose, and links to social media for people who want more detailed information or to get involved in supporting the centre as a volunteer or donor.
+4. To provide some helpful further information for people who have not owned a cat before, but would be interested in adopting one.
+5. To implement a responsive design and deliver a pleasant and compelling experience for users on all screen sizes from small mobile browsers to large desktop screens.
+
 
 **Link to deployed site:** https://andy-guttridge.github.io/tails-up/
+
+## Table of Contents
+
+- [Features](https://github.com/andy-guttridge/tails-up#features)
+  - [Vertically arranged site](https://github.com/andy-guttridge/tails-up#vertically-arranged-site)
+  - [Navigation bar](https://github.com/andy-guttridge/tails-up#navigation-bar)
+  - [About section](https://github.com/andy-guttridge/tails-up#about-section)
+  - [Available cats section](https://github.com/andy-guttridge/tails-up#available-cats-section)
+  - [Register section](https://github.com/andy-guttridge/tails-up#register-section)
+  - [Page to indicate successful form submission](https://github.com/andy-guttridge/tails-up#page-to-indicate-successful-form-submission)
+  - [Further information section](https://github.com/andy-guttridge/tails-up#further-information-section)
+  - [Footer](https://github.com/andy-guttridge/tails-up#footer)
+  - [404 error page](https://github.com/andy-guttridge/tails-up#404-error-page)
+- [Design](https://github.com/andy-guttridge/tails-up#design)
+  - [Responsiveness](https://github.com/andy-guttridge/tails-up#responsiveness)
+  - [Planning](https://github.com/andy-guttridge/tails-up#planning)
+  - [Colours](https://github.com/andy-guttridge/tails-up#colours)
+  - [Fonts](https://github.com/andy-guttridge/tails-up#fonts)
+  - [Features left to implement](https://github.com/andy-guttridge/tails-up#features-left-to-implement)
+- [Testing](https://github.com/andy-guttridge/tails-up#testing)
+  - [Validator testing](https://github.com/andy-guttridge/tails-up#validator-testing)
+    - [W3C HTML Validator](https://github.com/andy-guttridge/tails-up#w3c-html-validator)
+    - [W3C CSS Validator](https://github.com/andy-guttridge/tails-up#w3c-css-validator)
+  - [Accessibility testing](https://github.com/andy-guttridge/tails-up#accessibility-testing)
+  - [Other testing](https://github.com/andy-guttridge/tails-up#other-testing)
+  - [Unfixed bugs](https://github.com/andy-guttridge/tails-up#unfixed-bugs)
+- [Deployment](https://github.com/andy-guttridge/tails-up#deployment)
+- [Credits](https://github.com/andy-guttridge/tails-up#credits)
+  - [Code](https://github.com/andy-guttridge/tails-up#code)
+  - [Content](https://github.com/andy-guttridge/tails-up#content)
+  - [Media](https://github.com/andy-guttridge/tails-up#media)
+
 
 ## Features 
 
 ### Vertically arranged site
 
-The sections of the main website are arranged vertically in one 'long' webpage, with navigation links pointing to each section within the page, as opposed to separate pages for each section. This was an aesthetic design choice.
+The sections of the main website are arranged vertically in one 'long' webpage, with navigation links pointing to each section within the page, as opposed to separate pages for each section. This was largely an aesthetic design choice, however given the relatively compact nature of the website, this also provides an easy to navigate browsing experience. This addresses objective 5.
 
 ### Navigation bar
 
-A 'sticky' navigation bar at the top of the site to enable easy access to each section of the site. The title of the site is also displayed prominently in the navigation bar, and is itself a clickable link to `index.html`. The navigation items are arranged horizontally for screens at least 768px wide, and vertically for screens below this width, to prevent alignment issues.
+A 'sticky' navigation bar at the top of the site to enable easy access to each section of the site. The title of the site is also displayed prominently in the navigation bar, and is itself a clickable link to `index.html`. The navigation items are arranged horizontally for screens at least 768px wide, and vertically for screens below this width, to prevent alignment issues. This addresses objective 5.
 
 <p align="center">
   <img src="read-me_media/nav_bar_horizontal.png" alt="Horizontal nav bar" width="850">
@@ -31,6 +72,8 @@ The information within this section is presented in an 'About Tails-Up' box and 
 
 The hero image is displayed using the `background-image` CSS property applied to a `<div>`. Adding `role="img"` and `aria-label` attributes to the `<div>` to provide context for assistive technology was considered, however this could potentially have obscured the content within the `<div>` from screen readers. As the hero image itself provides no information and serves no semantic purpose, this was omitted to ensure the content within the `<div>` remained accessible. 
 
+The About section addresses objectives 3 and 5.
+
 <p align="center">
   <img src="read-me_media/about_wide.png" alt="About section for wider screens" width="540">
   <img src="read-me_media/about_narrow.png" alt="About section for narrow screens" width="210">
@@ -43,6 +86,8 @@ An 'Available Cats' section, which features a number of cats currently available
 
 The information about each cat is arranged horizontally on screen sizes of 1200px width or more, and stacked vertically on screens narrower than this to avoid some aesthetically displeasing alignment issues and ensure legibility.
 
+The Available Cats section addresses objectives 1 and 5.
+
 <p align="center">
   <img src="read-me_media/available_cats_wide.png" alt="Available cats section for wider screens" width="550">
   <img src="read-me_media/available_cats_narrow.png" alt="Available cats section for narrow screens" width="275">
@@ -52,6 +97,8 @@ The information about each cat is arranged horizontally on screen sizes of 1200p
 
 A 'Register' section, which provides the user with a form to complete to register their interest in adopting a cat. The form has required text/email fields requesting personal information (first name, last name and email address) and some radio buttons enabling the user to express some basic preferences about the sort of cat they are looking for and information about their home environment. The form also contains an optional field allowing the user to enter the names of any cats currently up for adoption if they are specifically interested in these.
 
+The Register section addresses objectives 2 and 5.
+
 <p align="center">
   <img src="read-me_media/register_form.png" alt="Register section" width="800">
 </p>
@@ -60,12 +107,16 @@ A 'Register' section, which provides the user with a form to complete to registe
 
 A separate page opening in the same window to confirm successful submission of the registration form.
 
+The form submission page addresses objective 5.
+
 <p align="center">
   <img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" width="800">
 </p>
 
 ### Further Information section
 A 'Further information' section featuring an embedded video from the Cat Society, providing some basic information for those new to adopting a cat, and a link to the Cats Protection charity website.
+
+The Further Information section addresses objectives 4 and 5.
 
 <p align="center">
   <img src="read-me_media/further_info.png" alt="Page indicating successful form submission" width="800">
@@ -74,6 +125,8 @@ A 'Further information' section featuring an embedded video from the Cat Society
 ### Footer
 A footer with links to social media.
 
+The footer addresses objectices 3 and 5.
+
 <p align="center">
   <img src="read-me_media/footer.png" alt="Footer" width="800">
 </p>
@@ -81,6 +134,7 @@ A footer with links to social media.
 ### 404 Error page
 A 404 error page to notify the user if they attempt to access a non-existent page or file. This is styled so that it clearly belongs to Tails-Up, and provides the user with links back to the main site.
 
+The 404 error page addresses objective 5.
 <p align="center">
   <img src="read-me_media/404.png" alt="404 page" width="800">
 </p>
@@ -90,7 +144,9 @@ A 404 error page to notify the user if they attempt to access a non-existent pag
 ### Responsiveness
 The site features a responsive design providing a suitable layout for smaller screen sizes, while maximising the visual appeal for larger screen sizes. The site has three 'breakpoints':
 - For small screens less than 768px wide, the navigation links at the top of the site and all of the content are stacked vertically.
+
 - For medium size screens between 768 - 1199px wide, the navigation links at the top of the site and the content of the 'About' section are displayed side by side, however the details of the cats in the 'Available Cats' section are stacked vertically.
+
 - For screens with a width of 1200px and above, the 'Available Cats' content is also spread horizonatally rather than stacked vertically. This layout also features a 'fixed' hero image, for additional visual appeal. This is not implemented for small and medium screen sizes, as some mobile browsers do not implement a `fixed` value for the CSS `background-attachment` property.
 
 ### Planning
@@ -106,12 +162,17 @@ The final site adheres closely to this, however soon after implementation commen
 The colours for the site were based around the hero image.
 
 - A dark colour from the hero image was chosen as the main site background: `rgb(49, 49, 49)`.
+
 - A light colour from the hero image was chosen as the colour for the main text content: `rgb (247, 247, 247)`.
+
 - Two light colours for headings were chosen, derived from the cat's eyes and nose in the hero image.
     - Blue: `rgb(184, 203, 213)`
     - Pink: `rgb(218, 185, 184)`
+
 - The pink heading colour was also used as the background for the footer, with the background colour from the rest of the site used for the text.
+
 - The standard CSS `pink` colour was used for hovered over links.
+
 - A dark turqouise colour derived from the eyes of the cat in the hero image was used for hovered over links in the footer: `rgb (90, 127, 138)`.
 
 ### Fonts
@@ -123,8 +184,11 @@ All features initially planned were successfully implemented.
 Ideas for future development could include:
 
 - A facility to enable users to make a donation to the rescue centre.
+
 - A content management system to enable changes to the content (especially the 'Available Cats' section) without having to amend the HTML and CSS code.
+
 - Additional guidance sections, for example on items to purchase for your cat, a cat feeding guide, information on personality traits and understanding cat body language.
+
 - A 'find us' link with an embedded map.
 
 ## Testing 
@@ -136,9 +200,11 @@ The 'responsive' setting in the development tools was used frequently to freely 
 Specific issues found during testing included:
 
 - The use of a sticky header combined with a 'long' page divided into sections meant that while the navigation links to each section functioned correctly, the heading for each section was obscured underneath the header. This was ultimately fixed using the CSS `scroll-margin-top:` property. The first attempt to fix this used `scroll-margin:` on `<section>` elements, however testing the deployed site on a real iPhone exposed a bug causing this property not to work for iOS devices. A Google search found that `scroll-margin-top:` has now been implemented correctly in iOS (source: [https://github.com/mdn/browser-compat-data/issues/7564](https://github.com/mdn/browser-compat-data/issues/7564) ), so this was used instead.
+
 - Testing of the media queries for the responsive design revealed potential issues with content spilling across the hero image for very narrow screen sizes (below about 315px width). This was fixed by slightly increasing the size of the hero image for small screens.
+
 - It was discovered that a value of `fixed` for the CSS `background-attachment:` property is not supported on iOS by testing a deployed version of the site on a real device (the Chrome developer tools do not emulate this behaviour). A value of `scroll` was used in the media queries for small and medium sized devices, to ensure compatibility. This means that only users with a large screen will benefit from a fixed position 'hero' image.
-- The site was tested with the VoiceOver screen reader in Mac OS. This revealed that when navigating through the page, only the header, navigation elements, about section and footer were recognised as 'landmarks' by the screen reader. The sections containing the main content of the site were not. Aria-labels were added to each section to rectify this.
+
 - The registration form was initially coded to submit the form to the Code Institute form dump, to test that it was functioning correctly. The form allows the user to make multiple selections for the age range of cats they are interested in, using checkboxes. Testing revealed that multiple selections for the age-range checkboxes were not being displayed on the Code Institute response page - only the first value submitted is shown:
 
 <p align="center">
@@ -173,10 +239,15 @@ Specific issues found during testing included:
 
 #### W3C HTML Validator
 - The W3C HTML validator report contained a warning of a possible mis-use of an `aria-label` on line 52 of `index.html`. The `aria-label` had been included for a `<div>` element containing 'taglines' for the site in an unordered list, to provide context for assistive technology in the absence of a heading. The `aria-label` was removed from the `<div>` and added to the nested `<ul>` element instead. This resolved the issue.
+
 - The validator detected a mis-spelling of the `<article>` opening tag on line 136 of `index.html`. Manual inspection revealed that the closing tag on line 166 was also mis-spelled, and the issue was corrected.
+
 - A mal-formed URL in the `action` attribute of the `<form>` element on line 180 of `index.html` was detected and corrected.
+
 - The validator report stated that the `frameborder` attribute on the `<iframe>` element on line 253 of `index.html` is obsolete, and should be replaced with CSS. The code for the `<iframe>` - including the `frameborder` attribute - was derived from the embedded player link provided by YouTube. The offending attribute was removed, and `border: 0px` added to the `styles.css` file to achieve the same effect.
+
 - Once these issues had been addressed, the HTML validation passed with no errors.
+
 - The HTML validator did not produce any warnings or errors for `404.html` or `form-submitted.html`.
 
 
@@ -199,9 +270,12 @@ All the text and background combinations included on the site were found to pass
 
  - The light pink/dark grey combination was found to fail the WCAG AAA test for 'normal' text, however it passed for 'large text'. 'Large text' is defined by WebAIM as 24px or greater. All text using this colour combination on the page is 24px or greater (based on a standard web browser text size of 16px) and the combination still passes the AA test even for normal text, therefore this was deemed acceptable.
 
+ - The site was tested with the VoiceOver screen reader in Mac OS. This revealed that when navigating through the page, only the header, navigation elements, about section and footer were recognised as 'landmarks' by the screen reader. The sections containing the main content of the site were not. Aria-labels were added to each section to rectify this.
+
 ### Other testing
 
 - While a high score of 95% for 'performance' was achieved in the lighthouse report for the deployed site as illustrated above, the report identified opportunities to increase performance by serving smaller images, using next generation image formats and delivering critical CSS inline to improve loading times. Image sizes have not been adjusted at this time, in order to provide an aesthetically pleasing experience on larger screens.
+
 - The score of 92% for 'best practice' is acceptable, however a number of of issues were detected with the embedded YouTube video:
     - Use of a deprecated feature was detected in YouTube's JavaScript:
 
@@ -220,7 +294,7 @@ All the text and background combinations included on the site were found to pass
     <p align="center">
       <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
     </p>
-    
+
 Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
 
 - The deployed site was carefully tested against the development version to check that all features function correctly. This included testing of all links within `index.html`, `404.html` and `form_submitted.html`, playing the embedded YouTube video and submitting the registration form. Early deployment and regular testing of a live site throughout development was helpful in picking up some issues that were not apparent when testing only the development version in Google Chrome (specific instances noted above).
@@ -231,45 +305,64 @@ Given these issues all relate to the embedded YouTube video and originate from Y
 
 ## Deployment
 
-- The site was deployed to GitHub pages as follows: 
+- The site can be deployed to GitHub pages as follows: 
   - Select the 'Settings' tab in the GitHub repository
   - Select 'Pages' under the 'Code and automation' heading 
   - Select the 'Main' branch from the 'Source' drop-down menu
   
   The site will then be deployed with a message displayed indicating success and providing the URL of the deployed site.
 
+  - A copy of the site can be downloaded for use in a local environment as follows:
+    - Locate the repository in GitHub and select it
+    - Select 'Code'
+    - Select 'Download ZIP' from the dropdown menu
+    - The ZIP file can now be extracted and utilised in your local environment
+
 ## Credits 
 
 ### Code
 
 - The script for using Font Awesome fonts was provided by [Font Awesome](https://fontawesome.com)
+
 - The advice from the [W3C tutorials on headers](https://www.w3.org/WAI/tutorials/tables/one-header/#table-with-header-cells-in-the-first-column-only) was applied to using table headers vertically in rows instead of using them as column headers
+
 - The technique of wrapping the embedded YouTube video in a `<div>` to enable responsive sizing of the `<iframe>` element and the CSS to resonsively style the video was taken from [flaviocopes.com](https://flaviocopes.com/responsive-youtube-videos/)
+
 - The code for the `<iframe>` element for the embedded YouTube video was generated by the 'Share -> Embed' option in the YouTube video player
+
 - The code for the Font Awesome social media icons in the footer is based on an example from the [Code Institute Love Running walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/?child=first)
+
 - The code for importing Google Fonts was adapated from the [Code Institute Coder's Coffeehouse walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/4d85cd1a2c57485abbd8ccec8c00732c/?child=first)
+
 - Use of the CSS `position` property with a value of `sticky` in conjunction with the `top` property to create a 'sticky' header was based on guidance and the code example at [medium.com](https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46) (see under 'How CSS Position Sticky Really Works!' and 'Browser support' headings)
+
 - Media query sizes were adapated from this article at [www.freecodecamp.com](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/)
 
 ### Content 
 
 - Placeholder content used during development generated using [Cat Ipsum Generator](https://fungenerators.com/lorem-ipsum/cat/) (not used in final version)
 
+- The first person style of the cat descriptions in the Available Cats section was inspired by the website of [Margaret Green Animal Rescue](https://www.margaretgreenanimalrescue.org.uk/)
+
 ### Media
 
 Images used in the completed website are:
 - The large grey cat 'hero' image used in the About section: [Photo by Pixabay from Pexels](https://www.pexels.com/photo/gray-cat-33537/)
+
 - The picture of Muffin the cat is: [Photo by belen  capello from Pexels](https://www.pexels.com/photo/close-up-shot-of-a-russian-gray-cat-8810701/)
+
 - The picture of Gizmo the cat is: [Photo by Gökberk Kılınçarslan from Pexels](https://www.pexels.com/photo/a-ginger-cat-on-wood-10832205/)
+
 - The picture of Star the cat is: [Photo by imustbedead from Pexels](https://www.pexels.com/photo/animal-pet-cute-fur-10813423/)
 
 The images used on the wire frame mock-up of the page and as placeholders during development are:
 - [Photo by cottonbro from Pexels](https://www.pexels.com/photo/black-cat-on-green-chair-6853506/
 )
+
 -   [Photo by Marko Blazevic from Pexels](https://www.pexels.com/photo/cute-gray-kitten-standing-on-a-wooden-flooring-774731/)
 
 The 'Getting Your First Cat' YouTube video in the 'Further Information' section was embedded with permission of the Cats Protection charity:
 - [Getting Your First Cat - Cats Protection](https://www.youtube.com/watch?v=sWZTz8KAjfY)
 
 
-Thanks to [Adegbenga Adeye](https://ng.linkedin.com/in/adegbenga-adeye-psm-i-14003635?original_referer=https%3A%2F%2Fwww.google.com%2F) for guidance throughout the project.
+#### Thanks to [Adegbenga Adeye](https://ng.linkedin.com/in/adegbenga-adeye-psm-i-14003635?original_referer=https%3A%2F%2Fwww.google.com%2F) for guidance throughout the project.
