@@ -1,6 +1,8 @@
 # Tails-up Cat Rescue
 
-<img src="read-me_media/read-me_header_image.png" alt="Header image for the Readme file" style="display: block; margin: 0 auto">
+<p align="center">
+  <img src="read-me_media/read-me_header_image.png" alt="Header image for the Readme file" align="center">
+</p>
 
 Tails-Up Cat Rescue is a static website for a cat rescue/rehoming centre. The site is aimed at people who are interested in adopting a cat, and showcases a number of cats who need to be re-homed. It provides some key information about the personality, attributes and needs of each cat to enable potential adopters to work out whether they might be a suitable 'match'. It also features a form to put those interested in adopting in touch with the centre, and some further information for those new to cat ownership. The site includes some basic background information about the rescue centre, and links to social media in the footer.
 
@@ -16,7 +18,10 @@ The sections of the main website are arranged vertically in one 'long' webpage, 
 
 A 'sticky' navigation bar at the top of the site to enable easy access to each section of the site. The title of the site is also displayed prominently in the navigation bar, and is itself a clickable link to `index.html`. The navigation items are arranged horizontally for screens at least 768px wide, and vertically for screens below this width, to prevent alignment issues.
 
-<img src="read-me_media/nav_bar_horizontal.png" alt="Horizontal nav bar" style="vertical-align: top; margin: 5px; max-height:150px"> <img src="read-me_media/nav_bar_vertical.png" alt="Vertical nav bar" style="margin: 5px; max-height: 150px">
+<p align="center">
+  <img src="read-me_media/nav_bar_horizontal.png" alt="Horizontal nav bar" width="850">
+  <img src="read-me_media/nav_bar_vertical.png" alt="Vertical nav bar" width="422">
+</p>
 
 ### About section
 
@@ -26,8 +31,10 @@ The information within this section is presented in an 'About Tails-Up' box and 
 
 The hero image is displayed using the `background-image` CSS property applied to a `<div>`. Adding `role="img"` and `aria-label` attributes to the `<div>` to provide context for assistive technology was considered, however this could potentially have obscured the content within the `<div>` from screen readers. As the hero image itself provides no information and serves no semantic purpose, this was omitted to ensure the content within the `<div>` remained accessible. 
 
-<img src="read-me_media/about_wide.png" alt="About section for wider screens" style="vertical-align: top; margin: 5px; max-height: 300px"> <img src="read-me_media/about_narrow.png" alt="About section for narrow screens" style="margin: 5px; max-height: 300px">
-
+<p align="center">
+  <img src="read-me_media/about_wide.png" alt="About section for wider screens" width="540">
+  <img src="read-me_media/about_narrow.png" alt="About section for narrow screens" width="210">
+</p>
 
 
 ### Available Cats section
@@ -36,34 +43,47 @@ An 'Available Cats' section, which features a number of cats currently available
 
 The information about each cat is arranged horizontally on screen sizes of 1200px width or more, and stacked vertically on screens narrower than this to avoid some aesthetically displeasing alignment issues and ensure legibility.
 
-<img src="read-me_media/available_cats_wide.png" alt="Available cats section for wider screens" style="vertical-align: top; margin: 5px; max-height: 3px"> <img src="read-me_media/available_cats_narrow.png" alt="Available cats section for narrow screens" style="margin: 5px; max-height: 300px">
+<p align="center">
+  <img src="read-me_media/available_cats_wide.png" alt="Available cats section for wider screens" width="550">
+  <img src="read-me_media/available_cats_narrow.png" alt="Available cats section for narrow screens" width="275">
+</p>
 
 ### Register section
 
 A 'Register' section, which provides the user with a form to complete to register their interest in adopting a cat. The form has required text/email fields requesting personal information (first name, last name and email address) and some radio buttons enabling the user to express some basic preferences about the sort of cat they are looking for and information about their home environment. The form also contains an optional field allowing the user to enter the names of any cats currently up for adoption if they are specifically interested in these.
 
-<img src="read-me_media/register_form.png" alt="Register section" style="margin: 5px; max-height: 500px;">
+<p align="center">
+  <img src="read-me_media/register_form.png" alt="Register section" width="800">
+</p>
 
 ### Page to indicate successful form submission
 
 A separate page opening in the same window to confirm successful submission of the registration form.
 
-<img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" style="margin: 5px; max-height: 500px">
+<p align="center">
+  <img src="read-me_media/thank_you.png" alt="Page indicating successful form submission" width="800">
+</p>
 
 ### Further Information section
 A 'Further information' section featuring an embedded video from the Cat Society, providing some basic information for those new to adopting a cat, and a link to the Cats Protection charity website.
 
-<img src="read-me_media/further_info.png" alt="Page indicating successful form submission" style="margin: 5px; max-height: 500px">
+<p align="center">
+  <img src="read-me_media/further_info.png" alt="Page indicating successful form submission" width="800">
+</p>
 
 ### Footer
 A footer with links to social media.
 
-<img src="read-me_media/footer.png" alt="Footer" style="margin: 5px; max-height: 500px">
+<p align="center">
+  <img src="read-me_media/footer.png" alt="Footer" width="800">
+</p>
 
 ### 404 Error page
 A 404 error page to notify the user if they attempt to access a non-existent page or file. This is styled so that it clearly belongs to Tails-Up, and provides the user with links back to the main site.
 
-<img src="read-me_media/404.png" alt="404 page" style="margin: 5px; max-height: 500px">
+<p align="center">
+  <img src="read-me_media/404.png" alt="404 page" width="800">
+</p>
 
 ## Design
 
@@ -76,7 +96,9 @@ The site features a responsive design providing a suitable layout for smaller sc
 ### Planning
 The features of the site were 'mocked up' using a basic wireframe of the layout envisioned for larger screens prior to implementation:
 
-<img src="read-me_media/tails_up_wireframe_small.png" alt="Wireframe plan for the project" style="max-width: 350px">
+<p align="center">
+  <img src="read-me_media/tails_up_wireframe_small.png" alt="Wireframe plan for the project" width="400">
+</p>
 
 The final site adheres closely to this, however soon after implementation commenced, it was decided to replace the three cat images in the 'About' section with a single 'hero' image. This was a purely aesthetic decision made after browsing some of the cat themed images available for use.
 
@@ -119,11 +141,15 @@ Specific issues found during testing included:
 - The site was tested with the VoiceOver screen reader in Mac OS. This revealed that when navigating through the page, only the header, navigation elements, about section and footer were recognised as 'landmarks' by the screen reader. The sections containing the main content of the site were not. Aria-labels were added to each section to rectify this.
 - The registration form was initially coded to submit the form to the Code Institute form dump, to test that it was functioning correctly. The form allows the user to make multiple selections for the age range of cats they are interested in, using checkboxes. Testing revealed that multiple selections for the age-range checkboxes were not being displayed on the Code Institute response page - only the first value submitted is shown:
 
-<img src="read-me_media/form-dump-screenshot.png" alt="Code Institute Form Dump screenshot">
+<p align="center">
+  <img src="read-me_media/form-dump-screenshot.png" alt="Code Institute Form Dump screenshot">
+</p>
 
  However, inspecting the data posted by the form in Chrome developer tools demonstrates that the data was being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
 
-<img src="read-me_media/form_data_screenshot.png">
+<p align=center>
+  <img src="read-me_media/form_data_screenshot.png" alt="Chrome developer tools screenshot showing form data">
+</p>
 
 - Once the form was verified to be correctly functioning using the form dump, a separate page to indicate successful submission was created, and the form refactored to link to this page using a `get` value for the `method` attribute of the `<form>` element. This provides a more user friendly experience, and maintains security by ensuring that no user data is actually submitted to any server.
 
@@ -133,12 +159,15 @@ Specific issues found during testing included:
 
 - This final testing also demonstrated that one of the checkboxes in the 'Preferred age range' section of the form was pushed onto a new line for screen sizes of around 320px width and below (e.g. iPhone 5), breaking the visual link with the corresponding label:
 
-<img src="read-me_media/bad_checkboxes.png">
+<p align="center">
+  <img src="read-me_media/bad_checkboxes.png" alt="Screenshot of badly aligned checkboxes">
+</p>
 
 - This was fixed by wrapping each set of checkboxes and labels within two nested `</div>`s. For mobile displays, the outer `<div>` is displayed as a block element, causing each checkbox and label pair to display on a new line. The inner `<div>` enabled the checkbox/label pairs to be appropriately aligned and centred within the outer `<div>`. While the issue only affected one checkbox, this approach was adopted for all radio buttons and checkboxes in the form for consistency:
 
-<img src="read-me_media/tidy_checkboxes.png">
-
+<p align="center">
+  <img src="read-me_media/tidy_checkboxes.png" alt="Screenshot of neat vertically aligned radio buttons and checkboxes">
+</p>
 
 ### Validator Testing 
 
@@ -157,12 +186,16 @@ Specific issues found during testing included:
 ### Accessibility testing
 - The site received a 100% accessibility score in the Google Chrome development tools lighthouse report:
 
-<img src="read-me_media/lighthouse_scores.png" alt="Lighthouse Scores">
+<p align="center">
+  <img src="read-me_media/lighthouse_scores.png" alt="Lighthouse Scores of 95 for performance, 100 for accessability and 92 for best practices">
+</p>
 
 - The WebAIM [contrast checker](https://webaim.org/resources/contrastchecker/) was used to check the colour scheme of the site.
 All the text and background combinations included on the site were found to pass the WCAG AAA test (including with the lighter background areas on the semi-transparent boxes in the About section), with the exception of the light pink headings on the dark grey background (and vice-versa in the footer):
 
-<img src="read-me_media/webaim.png" alt="Webaim score for pink text and dark grey background" style="max-width: 350px">
+<p align="center">
+  <img src="read-me_media/webaim.png" alt="Webaim score for pink text and dark grey background" width="350">
+</p>
 
  - The light pink/dark grey combination was found to fail the WCAG AAA test for 'normal' text, however it passed for 'large text'. 'Large text' is defined by WebAIM as 24px or greater. All text using this colour combination on the page is 24px or greater (based on a standard web browser text size of 16px) and the combination still passes the AA test even for normal text, therefore this was deemed acceptable.
 
@@ -172,16 +205,22 @@ All the text and background combinations included on the site were found to pass
 - The score of 92% for 'best practice' is acceptable, however a number of of issues were detected with the embedded YouTube video:
     - Use of a deprecated feature was detected in YouTube's JavaScript:
 
-    <img src="read-me_media/deprecated_feature.png" alt="Deprecated feature error screenshot">
+    <p align="center">
+      <img src="read-me_media/deprecated_feature.png" alt="Deprecated feature error screenshot">
+    </p>
 
     - An error relating to an event listener in YouTube's JavaScript:
 
-    <img src="read-me_media/event_listener.png" alt="YouTube JavaScript error screenshot">
+    <p align="center">
+      <img src="read-me_media/event_listener.png" alt="YouTube JavaScript error screenshot">
+    </p>
 
     - A Cross Origin Resource Sharing error relating to the embedded YouTube video. Further details are provided in the 'Unfixed Bugs' section below.
 
-    <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
-
+    <p align="center">
+      <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
+    </p>
+    
 Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
 
 - The deployed site was carefully tested against the development version to check that all features function correctly. This included testing of all links within `index.html`, `404.html` and `form_submitted.html`, playing the embedded YouTube video and submitting the registration form. Early deployment and regular testing of a live site throughout development was helpful in picking up some issues that were not apparent when testing only the development version in Google Chrome (specific instances noted above).
