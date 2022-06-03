@@ -8,8 +8,8 @@ Tails-Up Cat Rescue is a static website for a cat rescue/rehoming centre.
 
 The objectives of the site are:
 
-1. To provide a platform for the rescue centre to showcase specific cats up for adoption, and provide some basic details about each cat, including personality, attributes and any needs or requirements specific to each cat.
-2. To provide a mechanism for people interested in adopting a cat to register their details with the centre, and provide some basic details about their home environment and preferences with respect to cats they would be interested in. This would then enable the rescue centre to 'match' suitable cats to potential adopters.
+1. To provide a platform for the rescue centre to showcase specific cats that are up for adoption, and provide some basic details about each cat, including personality, attributes and any needs or requirements specific to each cat.
+2. To provide a mechanism for people interested in adopting a cat to register their details with the centre, and submit some basic details about their home environment and preferences with respect to cats they would be interested in. This would then enable the rescue centre to 'match' suitable cats to potential adopters.
 3. To present some basic background information about the rescue centre, including its location and purpose, and links to social media for people who want more detailed information or to get involved in supporting the centre as a volunteer or donor.
 4. To provide some helpful further information for people who have not owned a cat before, but would be interested in adopting one.
 5. To implement a responsive design and deliver a pleasant and compelling experience for users on all screen sizes from small mobile browsers to large desktop screens.
@@ -70,7 +70,7 @@ An 'About' section, which provides some brief background information on the resc
 
 The information within this section is presented in an 'About Tails-Up' box and a separate 'tagline' box. These are positioned on opposite sides of the hero image for screen sizes of 768px width and above. For screen sizes smaller than this, they are stacked vertically. While this compromises the impact of the hero image for mobile users, the more attractive approach used for larger screens caused the text to be 'bunched' together very tightly on smaller screens. Legibility and usability were prioritised over aesthetics.
 
-The hero image is displayed using the `background-image` CSS property applied to a `<div>`. Adding `role="img"` and `aria-label` attributes to the `<div>` to provide context for assistive technology was considered, however this could potentially have obscured the content within the `<div>` from screen readers. As the hero image itself provides no information and serves no semantic purpose, this was omitted to ensure the content within the `<div>` remained accessible. 
+The hero image is displayed using the `background-image` CSS property applied to a `<div>`. Adding `role="img"` and `aria-label` attributes to the `<div>` to provide context for assistive technology was considered, however this could potentially have obscured the content within the `<div>` from screen readers. As the hero image itself conveys no substantive information, this was omitted to ensure the content within the `<div>` remained accessible. 
 
 The About section addresses objectives 3 and 5.
 
@@ -82,7 +82,7 @@ The About section addresses objectives 3 and 5.
 
 ### Available Cats section
 
-An 'Available Cats' section, which features a number of cats currently available for adoption. The name of each cat is provided with a heading, followed by an appealing photo of the cat, a table providing basic details about the cat and a description written in the first 'person'.
+An 'Available Cats' section, which features a number of cats currently available for adoption. The name of each cat is provided with a heading, followed by an appealing photo of the cat, a table providing basic details about the cat and a description written in the 'first person'.
 
 The information about each cat is arranged horizontally on screen sizes of 1200px width or more, and stacked vertically on screens narrower than this to avoid some aesthetically displeasing alignment issues and ensure legibility.
 
@@ -125,7 +125,7 @@ The Further Information section addresses objectives 4 and 5.
 ### Footer
 A footer with links to social media.
 
-The footer addresses objectices 3 and 5.
+The footer addresses objectives 3 and 5.
 
 <p align="center">
   <img src="read-me_media/footer.png" alt="Footer" width="800">
@@ -211,13 +211,13 @@ Specific issues found during testing included:
   <img src="read-me_media/form-dump-screenshot.png" alt="Code Institute Form Dump screenshot">
 </p>
 
- However, inspecting the data posted by the form in Chrome developer tools demonstrates that the data was being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
+ However, inspecting the data posted by the form in Chrome developer tools demonstrated that the data was being sent correctly, so responding to multiple checkbox values does not appear to be implemented in the form dump. The following screenshot of the Chrome developer tools output demonstrates two values have been successfully submitted for the age-range checkboxes.
 
 <p align=center>
   <img src="read-me_media/form_data_screenshot.png" alt="Chrome developer tools screenshot showing form data">
 </p>
 
-- Once the form was verified to be correctly functioning using the form dump, a separate page to indicate successful submission was created, and the form refactored to link to this page using a `get` value for the `method` attribute of the `<form>` element. This provides a more user friendly experience, and maintains security by ensuring that no user data is actually submitted to any server.
+- Once the form was verified to be functioning correctly using the form dump, a separate page to indicate successful submission was created, and the form refactored to link to this page using a `get` value for the `method` attribute of the `<form>` element. This provides a more user friendly experience, and maintains security by ensuring that no user data is actually submitted to any server.
 
 - Testing of the links back to the `index.html` in the header of the 404 error page found that the links were incorrectly formed. This took several attempts to correct, and resulted in a number of GIT commits and pushes to Github, to ensure they would function correctly on the deployed site. 
 
@@ -244,7 +244,7 @@ Specific issues found during testing included:
 
 - A mal-formed URL in the `action` attribute of the `<form>` element on line 180 of `index.html` was detected and corrected.
 
-- The validator report stated that the `frameborder` attribute on the `<iframe>` element on line 253 of `index.html` is obsolete, and should be replaced with CSS. The code for the `<iframe>` - including the `frameborder` attribute - was derived from the embedded player link provided by YouTube. The offending attribute was removed, and `border: 0px` added to the `styles.css` file to achieve the same effect.
+- The validator report stated that the `frameborder` attribute on the `<iframe>` element used for the embedded YouTube video in the 'Further Information' section is obsolete, and should be replaced with CSS. The code for the `<iframe>` - including the `frameborder` attribute - was derived from the embedded player link provided by YouTube. The offending attribute was removed, and `border: 0px` added to the `styles.css` file to achieve the same effect.
 
 - Once these issues had been addressed, the HTML validation passed with no errors.
 
@@ -255,7 +255,7 @@ Specific issues found during testing included:
 - The W3C CSS Validator revealed the use of a `text-align` property with a value of `bottom` on the CSS for the `<div>` with an id of `#about-text-container`. As `bottom` is not an allowed value for this property, this line of CSS was having no effect and was removed. The CSS validation passed with no errors once this had been addressed.
 
 ### Accessibility testing
-- The site received a 100% accessibility score in the Google Chrome development tools lighthouse report:
+- The deployed site received a 100% accessibility score in the Google Chrome development tools lighthouse report:
 
 <p align="center">
   <img src="read-me_media/lighthouse_scores.png" alt="Lighthouse Scores of 95 for performance, 100 for accessability and 92 for best practices">
@@ -274,7 +274,7 @@ All the text and background combinations included on the site were found to pass
 
 ### Other testing
 
-- While a high score of 95% for 'performance' was achieved in the lighthouse report for the deployed site as illustrated above, the report identified opportunities to increase performance by serving smaller images, using next generation image formats and delivering critical CSS inline to improve loading times. Image sizes have not been adjusted at this time, in order to provide an aesthetically pleasing experience on larger screens.
+- While a high score of 95% for 'performance' was achieved in the lighthouse report for the deployed site as illustrated above, the report identified opportunities to increase performance by serving smaller images, using next generation image formats and delivering critical CSS inline to improve loading times. Image sizes have not been adjusted at this time, in order to provide an aesthetically pleasing experience on larger screens, however smaller images could be used for the CSS media queries for smaller screen sizes at a later date.
 
 - The score of 92% for 'best practice' is acceptable, however a number of of issues were detected with the embedded YouTube video:
     - Use of a deprecated feature was detected in YouTube's JavaScript:
@@ -295,13 +295,13 @@ All the text and background combinations included on the site were found to pass
       <img src="read-me_media/cors_error.png" alt="CORS error screenshot">
     </p>
 
-Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
+  Given these issues all relate to the embedded YouTube video and originate from YouTube's injected code, it is beyond the scope of this project to fix these errors. As the YouTube video was rendered correctly and fully usable throughout testing, and the lighthouse report produce an overall high score for 'best practice', it was decided to retain the video, however this could be revisited in a future version of the site.
 
 - The deployed site was carefully tested against the development version to check that all features function correctly. This included testing of all links within `index.html`, `404.html` and `form_submitted.html`, playing the embedded YouTube video and submitting the registration form. Early deployment and regular testing of a live site throughout development was helpful in picking up some issues that were not apparent when testing only the development version in Google Chrome (specific instances noted above).
 
 ### Unfixed Bugs
 
-- During testing, a series of Cross Origin Resource Sharing (CORS) errors relating to the embedded YouTube video were noted in the Chrome developer tools console. In researching this issue, it was noted that the URL of the site embedding the video should be added to the YouTube URL (i.e. `https://www.youtube-nocookie.com/embed/sWZTz8KAjfY?origin=https://andy-guttridge.github.io/tails-up/`), and this was added to the YouTube URL. However, it appears there are currently unresolved issues with the YouTube player causing such CORS errors (source [https://issuetracker.google.com/issues/229013699?pli=1]). Although this issue remains unresolved, the embedded video functioned correctly in testing.
+- During testing, a series of Cross Origin Resource Sharing (CORS) errors relating to the embedded YouTube video were noted in the Chrome developer tools console. In researching this issue, it was noted that the URL of the site embedding the video should be added to the YouTube URL (i.e. `https://www.youtube-nocookie.com/embed/sWZTz8KAjfY?origin=https://andy-guttridge.github.io/tails-up/`), and this was added to the YouTube URL. However, it appears there are currently unresolved issues with the YouTube player causing such CORS errors [source](https://issuetracker.google.com/issues/229013699?pli=1]). Although this issue remains unresolved, the embedded video functioned correctly in testing.
 
 ## Deployment
 
@@ -312,11 +312,11 @@ Given these issues all relate to the embedded YouTube video and originate from Y
   
   The site will then be deployed with a message displayed indicating success and providing the URL of the deployed site.
 
-  - A copy of the site can be downloaded for use in a local environment as follows:
-    - Locate the repository in GitHub and select it
-    - Select 'Code'
-    - Select 'Download ZIP' from the dropdown menu
-    - The ZIP file can now be extracted and utilised in your local environment
+- A copy of the site can be downloaded for use in a local environment as follows:
+  - Locate the repository in GitHub and select it
+  - Select 'Code'
+  - Select 'Download ZIP' from the dropdown menu
+  - The ZIP file can now be extracted and utilised in your local environment
 
 ## Credits 
 
@@ -326,7 +326,7 @@ Given these issues all relate to the embedded YouTube video and originate from Y
 
 - The advice from the [W3C tutorials on headers](https://www.w3.org/WAI/tutorials/tables/one-header/#table-with-header-cells-in-the-first-column-only) was applied to using table headers vertically in rows instead of using them as column headers
 
-- The technique of wrapping the embedded YouTube video in a `<div>` to enable responsive sizing of the `<iframe>` element and the CSS to resonsively style the video was taken from [flaviocopes.com](https://flaviocopes.com/responsive-youtube-videos/)
+- The technique of wrapping the embedded YouTube video in a `<div>` to enable responsive sizing of the `<iframe>` element and the CSS to responsively style the video was taken from [flaviocopes.com](https://flaviocopes.com/responsive-youtube-videos/)
 
 - The code for the `<iframe>` element for the embedded YouTube video was generated by the 'Share -> Embed' option in the YouTube video player
 
@@ -342,7 +342,7 @@ Given these issues all relate to the embedded YouTube video and originate from Y
 
 - Placeholder content used during development generated using [Cat Ipsum Generator](https://fungenerators.com/lorem-ipsum/cat/) (not used in final version)
 
-- The first person style of the cat descriptions in the Available Cats section was inspired by the website of [Margaret Green Animal Rescue](https://www.margaretgreenanimalrescue.org.uk/)
+- The first person style of the cat descriptions in the 'Available Cats' section was inspired by the website [Margaret Green Animal Rescue](https://www.margaretgreenanimalrescue.org.uk/) website
 
 ### Media
 
